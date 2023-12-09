@@ -4,3 +4,90 @@
 2023-12-09 15:39:13.969 +07:00 [INF] Application started. Press Ctrl+C to shut down.
 2023-12-09 15:39:13.970 +07:00 [INF] Hosting environment: Development
 2023-12-09 15:39:13.971 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 16:33:23.012 +07:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2023-12-09 16:33:23.128 +07:00 [INF] Now listening on: https://localhost:7199
+2023-12-09 16:33:23.131 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-09 16:33:23.133 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 16:33:23.134 +07:00 [INF] Hosting environment: Development
+2023-12-09 16:33:23.135 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 16:37:41.878 +07:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2023-12-09 16:37:41.982 +07:00 [INF] Now listening on: https://localhost:7199
+2023-12-09 16:37:41.986 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-09 16:37:41.988 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 16:37:41.989 +07:00 [INF] Hosting environment: Development
+2023-12-09 16:37:41.990 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 18:24:43.658 +07:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2023-12-09 18:24:43.770 +07:00 [INF] Now listening on: https://localhost:7199
+2023-12-09 18:24:43.773 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-09 18:24:43.775 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 18:24:43.775 +07:00 [INF] Hosting environment: Development
+2023-12-09 18:24:43.776 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 18:25:52.566 +07:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2023-12-09 18:25:52.693 +07:00 [INF] Now listening on: https://localhost:7199
+2023-12-09 18:25:52.695 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-09 18:25:52.697 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 18:25:52.698 +07:00 [INF] Hosting environment: Development
+2023-12-09 18:25:52.699 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 18:28:16.064 +07:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2023-12-09 18:28:16.170 +07:00 [INF] Now listening on: https://localhost:7199
+2023-12-09 18:28:16.175 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-09 18:28:16.177 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 18:28:16.178 +07:00 [INF] Hosting environment: Development
+2023-12-09 18:28:16.178 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 18:28:42.256 +07:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2023-12-09 18:28:42.384 +07:00 [INF] Now listening on: https://localhost:7199
+2023-12-09 18:28:42.387 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-09 18:28:42.390 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 18:28:42.392 +07:00 [INF] Hosting environment: Development
+2023-12-09 18:28:42.394 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 18:33:09.056 +07:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2023-12-09 18:33:09.203 +07:00 [INF] Now listening on: https://localhost:7199
+2023-12-09 18:33:09.207 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-09 18:33:09.210 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 18:33:09.211 +07:00 [INF] Hosting environment: Development
+2023-12-09 18:33:09.212 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 18:35:05.244 +07:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2023-12-09 18:35:05.364 +07:00 [INF] Now listening on: https://localhost:7199
+2023-12-09 18:35:05.367 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-09 18:35:05.369 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 18:35:05.370 +07:00 [INF] Hosting environment: Development
+2023-12-09 18:35:05.371 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 18:45:07.832 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-09 18:45:07.904 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 18:45:07.914 +07:00 [INF] Hosting environment: Development
+2023-12-09 18:45:07.915 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 18:47:41.938 +07:00 [INF] Application is shutting down...
+2023-12-09 18:51:36.860 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-09 18:51:36.901 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 18:51:36.903 +07:00 [INF] Hosting environment: Development
+2023-12-09 18:51:36.906 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 19:24:34.245 +07:00 [INF] Application is shutting down...
+2023-12-09 19:24:48.505 +07:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2023-12-09 19:24:48.667 +07:00 [INF] Now listening on: https://localhost:7199
+2023-12-09 19:24:48.670 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-09 19:24:48.672 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 19:24:48.674 +07:00 [INF] Hosting environment: Development
+2023-12-09 19:24:48.675 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 19:31:28.678 +07:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2023-12-09 19:31:28.825 +07:00 [INF] Now listening on: https://localhost:7199
+2023-12-09 19:31:28.828 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-09 19:31:28.832 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 19:31:28.833 +07:00 [INF] Hosting environment: Development
+2023-12-09 19:31:28.834 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 19:32:58.717 +07:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2023-12-09 19:32:58.877 +07:00 [INF] Now listening on: https://localhost:7199
+2023-12-09 19:32:58.880 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-09 19:32:58.882 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 19:32:58.883 +07:00 [INF] Hosting environment: Development
+2023-12-09 19:32:58.884 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 20:12:34.392 +07:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2023-12-09 20:12:34.641 +07:00 [INF] Now listening on: https://localhost:7199
+2023-12-09 20:12:34.645 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-09 20:12:34.648 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 20:12:34.650 +07:00 [INF] Hosting environment: Development
+2023-12-09 20:12:34.651 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 23:30:27.987 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-09 23:30:28.047 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-09 23:30:28.050 +07:00 [INF] Hosting environment: Development
+2023-12-09 23:30:28.051 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-09 23:38:06.971 +07:00 [INF] Application is shutting down...
