@@ -1,4 +1,4 @@
-namespace HotelListingAPI.Dto.Hotels
+namespace HotelListingAPI.Dtos.Hotels
 {
     public class HotelDto
     {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
 using HotelListingAPI.Contracts;
-using HotelListingAPI.Dto.Country;
+using HotelListingAPI.Dtos.Country;
 using HotelListingAPI.Entitys;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;

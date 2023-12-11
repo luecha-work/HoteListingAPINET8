@@ -403,11 +403,11 @@ AutoMapper.AutoMapperMappingException: Error mapping types.
 
 Mapping types:
 Country -> CountryDto
-HotelListingAPI.Entitys.Country -> HotelListingAPI.Dto.Country.CountryDto
+HotelListingAPI.Entitys.Country -> HotelListingAPI.Dtos.Country.CountryDto
 
 Type Map configuration:
 Country -> CountryDto
-HotelListingAPI.Entitys.Country -> HotelListingAPI.Dto.Country.CountryDto
+HotelListingAPI.Entitys.Country -> HotelListingAPI.Dtos.Country.CountryDto
 
 Destination Member:
 hotels
@@ -416,7 +416,7 @@ hotels
 
 Mapping types:
 IList`1 -> HotelDto
-System.Collections.Generic.IList`1[[HotelListingAPI.Entitys.Hotel, HotelListingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListingAPI.Dto.Hotels.HotelDto
+System.Collections.Generic.IList`1[[HotelListingAPI.Entitys.Hotel, HotelListingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListingAPI.Dtos.Hotels.HotelDto
    at lambda_method110(Closure, IList`1, HotelDto, ResolutionContext)
    at lambda_method109(Closure, Object, CountryDto, ResolutionContext)
    --- End of inner exception stack trace ---
@@ -439,11 +439,11 @@ AutoMapper.AutoMapperMappingException: Error mapping types.
 
 Mapping types:
 Country -> CountryDto
-HotelListingAPI.Entitys.Country -> HotelListingAPI.Dto.Country.CountryDto
+HotelListingAPI.Entitys.Country -> HotelListingAPI.Dtos.Country.CountryDto
 
 Type Map configuration:
 Country -> CountryDto
-HotelListingAPI.Entitys.Country -> HotelListingAPI.Dto.Country.CountryDto
+HotelListingAPI.Entitys.Country -> HotelListingAPI.Dtos.Country.CountryDto
 
 Destination Member:
 hotels
@@ -452,7 +452,7 @@ hotels
 
 Mapping types:
 IList`1 -> HotelDto
-System.Collections.Generic.IList`1[[HotelListingAPI.Entitys.Hotel, HotelListingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListingAPI.Dto.Hotels.HotelDto
+System.Collections.Generic.IList`1[[HotelListingAPI.Entitys.Hotel, HotelListingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListingAPI.Dtos.Hotels.HotelDto
    at lambda_method110(Closure, IList`1, HotelDto, ResolutionContext)
    at lambda_method109(Closure, Object, CountryDto, ResolutionContext)
    --- End of inner exception stack trace ---
@@ -487,11 +487,11 @@ AutoMapper.AutoMapperMappingException: Error mapping types.
 
 Mapping types:
 Country -> CountryDto
-HotelListingAPI.Entitys.Country -> HotelListingAPI.Dto.Country.CountryDto
+HotelListingAPI.Entitys.Country -> HotelListingAPI.Dtos.Country.CountryDto
 
 Type Map configuration:
 Country -> CountryDto
-HotelListingAPI.Entitys.Country -> HotelListingAPI.Dto.Country.CountryDto
+HotelListingAPI.Entitys.Country -> HotelListingAPI.Dtos.Country.CountryDto
 
 Destination Member:
 hotels
@@ -500,7 +500,7 @@ hotels
 
 Mapping types:
 IList`1 -> HotelDto
-System.Collections.Generic.IList`1[[HotelListingAPI.Entitys.Hotel, HotelListingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListingAPI.Dto.Hotels.HotelDto
+System.Collections.Generic.IList`1[[HotelListingAPI.Entitys.Hotel, HotelListingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListingAPI.Dtos.Hotels.HotelDto
    at lambda_method110(Closure, IList`1, HotelDto, ResolutionContext)
    at lambda_method109(Closure, Object, CountryDto, ResolutionContext)
    --- End of inner exception stack trace ---
@@ -523,11 +523,11 @@ AutoMapper.AutoMapperMappingException: Error mapping types.
 
 Mapping types:
 Country -> CountryDto
-HotelListingAPI.Entitys.Country -> HotelListingAPI.Dto.Country.CountryDto
+HotelListingAPI.Entitys.Country -> HotelListingAPI.Dtos.Country.CountryDto
 
 Type Map configuration:
 Country -> CountryDto
-HotelListingAPI.Entitys.Country -> HotelListingAPI.Dto.Country.CountryDto
+HotelListingAPI.Entitys.Country -> HotelListingAPI.Dtos.Country.CountryDto
 
 Destination Member:
 hotels
@@ -536,7 +536,7 @@ hotels
 
 Mapping types:
 IList`1 -> HotelDto
-System.Collections.Generic.IList`1[[HotelListingAPI.Entitys.Hotel, HotelListingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListingAPI.Dto.Hotels.HotelDto
+System.Collections.Generic.IList`1[[HotelListingAPI.Entitys.Hotel, HotelListingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListingAPI.Dtos.Hotels.HotelDto
    at lambda_method110(Closure, IList`1, HotelDto, ResolutionContext)
    at lambda_method109(Closure, Object, CountryDto, ResolutionContext)
    --- End of inner exception stack trace ---
@@ -563,11 +563,11 @@ AutoMapper.AutoMapperMappingException: Error mapping types.
 
 Mapping types:
 Country -> CountryDto
-HotelListingAPI.Entitys.Country -> HotelListingAPI.Dto.Country.CountryDto
+HotelListingAPI.Entitys.Country -> HotelListingAPI.Dtos.Country.CountryDto
 
 Type Map configuration:
 Country -> CountryDto
-HotelListingAPI.Entitys.Country -> HotelListingAPI.Dto.Country.CountryDto
+HotelListingAPI.Entitys.Country -> HotelListingAPI.Dtos.Country.CountryDto
 
 Destination Member:
 hotels
@@ -576,7 +576,7 @@ hotels
 
 Mapping types:
 IList`1 -> HotelDto
-System.Collections.Generic.IList`1[[HotelListingAPI.Entitys.Hotel, HotelListingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListingAPI.Dto.Hotels.HotelDto
+System.Collections.Generic.IList`1[[HotelListingAPI.Entitys.Hotel, HotelListingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListingAPI.Dtos.Hotels.HotelDto
    at lambda_method110(Closure, IList`1, HotelDto, ResolutionContext)
    at lambda_method109(Closure, Object, CountryDto, ResolutionContext)
    --- End of inner exception stack trace ---
@@ -599,11 +599,11 @@ AutoMapper.AutoMapperMappingException: Error mapping types.
 
 Mapping types:
 Country -> CountryDto
-HotelListingAPI.Entitys.Country -> HotelListingAPI.Dto.Country.CountryDto
+HotelListingAPI.Entitys.Country -> HotelListingAPI.Dtos.Country.CountryDto
 
 Type Map configuration:
 Country -> CountryDto
-HotelListingAPI.Entitys.Country -> HotelListingAPI.Dto.Country.CountryDto
+HotelListingAPI.Entitys.Country -> HotelListingAPI.Dtos.Country.CountryDto
 
 Destination Member:
 hotels
@@ -612,7 +612,7 @@ hotels
 
 Mapping types:
 IList`1 -> HotelDto
-System.Collections.Generic.IList`1[[HotelListingAPI.Entitys.Hotel, HotelListingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListingAPI.Dto.Hotels.HotelDto
+System.Collections.Generic.IList`1[[HotelListingAPI.Entitys.Hotel, HotelListingAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]] -> HotelListingAPI.Dtos.Hotels.HotelDto
    at lambda_method110(Closure, IList`1, HotelDto, ResolutionContext)
    at lambda_method109(Closure, Object, CountryDto, ResolutionContext)
    --- End of inner exception stack trace ---
@@ -695,7 +695,7 @@ System.Collections.Generic.IList`1[[HotelListingAPI.Entitys.Hotel, HotelListingA
 2023-12-11 22:30:40.111 +07:00 [WRN] Failed to determine the https port for redirect.
 2023-12-11 22:30:40.429 +07:00 [ERR] HTTP POST /api/Countries responded 500 in 318.9493 ms
 System.MissingMethodException: Attempted to access a missing method.
-   at HotelListingAPI.Dto.Country.CreateCountryDto..ctor()
+   at HotelListingAPI.Dtos.Country.CreateCountryDto..ctor()
    at .ctor()
    at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
    at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
@@ -717,7 +717,7 @@ System.MissingMethodException: Attempted to access a missing method.
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
 2023-12-11 22:30:40.443 +07:00 [ERR] An unhandled exception has occurred while executing the request.
 System.MissingMethodException: Attempted to access a missing method.
-   at HotelListingAPI.Dto.Country.CreateCountryDto..ctor()
+   at HotelListingAPI.Dtos.Country.CreateCountryDto..ctor()
    at .ctor()
    at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
    at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
@@ -743,7 +743,7 @@ System.MissingMethodException: Attempted to access a missing method.
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
 2023-12-11 22:31:38.351 +07:00 [ERR] HTTP POST /api/Countries responded 500 in 16.1460 ms
 System.MissingMethodException: Attempted to access a missing method.
-   at HotelListingAPI.Dto.Country.CreateCountryDto..ctor()
+   at HotelListingAPI.Dtos.Country.CreateCountryDto..ctor()
    at .ctor()
    at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
    at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
@@ -765,7 +765,7 @@ System.MissingMethodException: Attempted to access a missing method.
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
 2023-12-11 22:31:38.353 +07:00 [ERR] An unhandled exception has occurred while executing the request.
 System.MissingMethodException: Attempted to access a missing method.
-   at HotelListingAPI.Dto.Country.CreateCountryDto..ctor()
+   at HotelListingAPI.Dtos.Country.CreateCountryDto..ctor()
    at .ctor()
    at System.Text.Json.Serialization.Converters.ObjectDefaultConverter`1.OnTryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value)
    at System.Text.Json.Serialization.JsonConverter`1.TryRead(Utf8JsonReader& reader, Type typeToConvert, JsonSerializerOptions options, ReadStack& state, T& value, Boolean& isPopulatedValue)
@@ -811,3 +811,18 @@ System.MissingMethodException: Attempted to access a missing method.
 2023-12-11 22:40:24.258 +07:00 [INF] HTTP PUT /api/Countries/1004 responded 204 in 26.8697 ms
 2023-12-11 22:40:34.285 +07:00 [INF] HTTP GET /api/Countries responded 200 in 3.4699 ms
 2023-12-11 22:45:57.885 +07:00 [INF] Application is shutting down...
+2023-12-11 22:59:45.335 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-11 22:59:45.370 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 22:59:45.371 +07:00 [INF] Hosting environment: Development
+2023-12-11 22:59:45.371 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-11 23:00:11.450 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-11 23:00:11.488 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 23:00:11.488 +07:00 [INF] Hosting environment: Development
+2023-12-11 23:00:11.488 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-11 23:00:24.112 +07:00 [INF] Application is shutting down...
+2023-12-11 23:00:39.603 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-11 23:00:39.643 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 23:00:39.643 +07:00 [INF] Hosting environment: Development
+2023-12-11 23:00:39.644 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-11 23:01:03.884 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-12-11 23:01:05.373 +07:00 [INF] HTTP GET /api/Countries responded 200 in 1490.6522 ms

@@ -4,8 +4,8 @@ using System.Diagnostics.Metrics;
 using System.Linq;
 using System.Threading.Tasks;
 using AutoMapper;
-using HotelListingAPI.Dto.Country;
-using HotelListingAPI.Dto.Hotels;
+using HotelListingAPI.Dtos.Country;
+using HotelListingAPI.Dtos.Hotels;
 using HotelListingAPI.Entitys;
 
 //TODO: Add Maper Data 2
@@ -15,14 +15,14 @@ namespace HotelListingAPI.Configurations
     {
         public MapperConfig()
         {
-            //TODO: Create Mapper -> Country to Dto
+            //TODO: Create Mapper -> Country to Dtos
             CreateMap<Country, CreateCountryDto>()
                 .ReverseMap();
             CreateMap<Country, UpdateCountryDto>().ReverseMap();
             CreateMap<Country, GetCountryDto>().ReverseMap();
             CreateMap<Country, CountryDto>().ReverseMap();
 
-            //TODO: Create Mapper -> Hotel to Dto
+            //TODO: Create Mapper -> Hotel to Dtos
             CreateMap<Hotel, HotelDto>()
                 .ReverseMap();
         }

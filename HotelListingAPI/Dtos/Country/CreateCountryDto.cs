@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace HotelListingAPI.Dto.Country
+namespace HotelListingAPI.Dtos.Country
 {
     [AttributeUsage(AttributeTargets.Property, Inherited = false, AllowMultiple = false)]
     sealed class RequiredForCreateAttribute : RequiredAttribute

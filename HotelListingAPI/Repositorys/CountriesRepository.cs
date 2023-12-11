@@ -6,7 +6,7 @@ using HotelListingAPI.Contracts;
 using HotelListingAPI.Entitys;
 using Microsoft.EntityFrameworkCore;
 
-namespace HotelListingAPI.Repository
+namespace HotelListingAPI.Repositorys
 {
     public class CountriesRepository : GenericRepository<Country>, ICountriesRepository
     {

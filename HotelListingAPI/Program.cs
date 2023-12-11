@@ -2,7 +2,7 @@ using System.Reflection.Emit;
 using HotelListingAPI.Configurations;
 using HotelListingAPI.Contracts;
 using HotelListingAPI.Entitys;
-using HotelListingAPI.Repository;
+using HotelListingAPI.Repositorys;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
@@ -42,7 +42,7 @@ builder
 //TODO: Add Maper Data 1
 builder.Services.AddAutoMapper(typeof(MapperConfig));
 
-//TODO: Add Repository modedl
+//TODO: Add Repositorys modedl
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<ICountriesRepository, CountriesRepository>();
 

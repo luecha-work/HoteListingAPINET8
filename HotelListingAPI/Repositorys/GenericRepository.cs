@@ -6,12 +6,12 @@ using HotelListingAPI.Contracts;
 using HotelListingAPI.Entitys;
 using Microsoft.EntityFrameworkCore;
 
-namespace HotelListingAPI.Repository
+namespace HotelListingAPI.Repositorys
 {
     public class GenericRepository<T> : IGenericRepository<T>
         where T : class
     {
-        //TODO: Setup DbContext to use on Repository
+        //TODO: Setup DbContext to use on Repositorys
         private readonly HotelListingDbContext _context;
 
         public GenericRepository(HotelListingDbContext context)
