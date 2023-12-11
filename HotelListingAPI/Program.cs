@@ -1,7 +1,10 @@
-using HotelListingAPI.Models;
+using System.Reflection.Emit;
+using HotelListingAPI.Configurations;
+using HotelListingAPI.Contracts;
+using HotelListingAPI.Entitys;
+using HotelListingAPI.Repository;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
-using System.Reflection.Emit;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,14 +12,19 @@ var builder = WebApplication.CreateBuilder(args);
 
 //TODO: Connect SQL Server Database
 var connectionString = builder.Configuration.GetConnectionString("HotelListingDbConnectionString");
-builder.Services.AddDbContext<HotelListingDbContext>(options =>
-{
-    options.UseSqlServer(connectionString);
-});
+builder
+    .Services
+    .AddDbContext<HotelListingDbContext>(options =>
+    {
+        options.UseSqlServer(connectionString);
+    });
 
 builder.Services.AddControllers();
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
+
+builder.Services.AddSwaggerGen();
 
 //TODO: Add cors url1
 builder
@@ -27,9 +35,16 @@ builder
     });
 
 //TODO: Add Serilog1
-builder.Host.UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
+builder
+    .Host
+    .UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
 
-builder.Services.AddSwaggerGen();
+//TODO: Add Maper Data 1
+builder.Services.AddAutoMapper(typeof(MapperConfig));
+
+//TODO: Add Repository modedl
+builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
+builder.Services.AddScoped<ICountriesRepository, CountriesRepository>();
 
 var app = builder.Build();
 
