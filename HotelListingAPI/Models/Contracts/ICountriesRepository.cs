@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using HotelListingAPI.Entitys;
 
-namespace HotelListingAPI.Contracts
+namespace HotelListingAPI.Models.Contracts
 {
     public interface ICountriesRepository : IGenericRepository<Country>
     {

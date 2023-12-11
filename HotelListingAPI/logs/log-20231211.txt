@@ -826,3 +826,40 @@ System.MissingMethodException: Attempted to access a missing method.
 2023-12-11 23:00:39.644 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
 2023-12-11 23:01:03.884 +07:00 [WRN] Failed to determine the https port for redirect.
 2023-12-11 23:01:05.373 +07:00 [INF] HTTP GET /api/Countries responded 200 in 1490.6522 ms
+2023-12-11 23:21:53.565 +07:00 [INF] Application is shutting down...
+2023-12-11 23:22:15.485 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-11 23:22:15.518 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 23:22:15.518 +07:00 [INF] Hosting environment: Development
+2023-12-11 23:22:15.518 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-11 23:22:21.322 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-12-11 23:22:22.786 +07:00 [INF] HTTP GET /api/Countries responded 200 in 1464.4663 ms
+2023-12-11 23:22:31.611 +07:00 [INF] HTTP DELETE /api/Countries/1002 responded 204 in 243.7102 ms
+2023-12-11 23:22:40.456 +07:00 [INF] HTTP DELETE /api/Countries/1003 responded 204 in 23.7522 ms
+2023-12-11 23:22:44.610 +07:00 [INF] HTTP DELETE /api/Countries/1004 responded 204 in 19.6814 ms
+2023-12-11 23:22:50.544 +07:00 [INF] HTTP GET /api/Countries responded 200 in 4.7318 ms
+2023-12-11 23:52:19.789 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-11 23:52:19.825 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 23:52:19.826 +07:00 [INF] Hosting environment: Development
+2023-12-11 23:52:19.826 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-11 23:52:20.202 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HotelListingAPI.Controllers.HotelsController.Index (HotelListingAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-11 23:52:30.393 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-11 23:52:30.445 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 23:52:30.446 +07:00 [INF] Hosting environment: Development
+2023-12-11 23:52:30.446 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-11 23:52:47.853 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-11 23:52:47.892 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 23:52:47.893 +07:00 [INF] Hosting environment: Development
+2023-12-11 23:52:47.893 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-11 23:54:58.806 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-11 23:54:58.846 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 23:54:58.846 +07:00 [INF] Hosting environment: Development
+2023-12-11 23:54:58.847 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-11 23:59:14.703 +07:00 [INF] Application is shutting down...

@@ -25,6 +25,7 @@ namespace HotelListingAPI.Configurations
             //TODO: Create Mapper -> Hotel to Dtos
             CreateMap<Hotel, HotelDto>()
                 .ReverseMap();
+            CreateMap<Hotel, CreateHotelDto>().ReverseMap();
         }
     }
 }
