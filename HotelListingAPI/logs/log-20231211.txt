@@ -296,3 +296,11 @@ Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/
 2023-12-11 15:37:13.300 +07:00 [INF] Hosting environment: Development
 2023-12-11 15:37:13.300 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
 2023-12-11 15:37:16.653 +07:00 [INF] Application is shutting down...
+2023-12-11 15:37:32.315 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-11 15:37:32.357 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-11 15:37:32.357 +07:00 [INF] Hosting environment: Development
+2023-12-11 15:37:32.357 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-11 15:42:43.018 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-12-11 15:42:44.285 +07:00 [INF] HTTP GET /api/Countries responded 200 in 1269.9817 ms
+2023-12-11 15:42:52.061 +07:00 [INF] HTTP DELETE /api/Countries/1001 responded 204 in 213.5624 ms
+2023-12-11 15:42:55.222 +07:00 [INF] HTTP GET /api/Countries responded 200 in 48.3970 ms
