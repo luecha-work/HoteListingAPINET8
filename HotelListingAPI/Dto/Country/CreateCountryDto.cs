@@ -10,7 +10,8 @@ namespace HotelListingAPI.Dto.Country
 
     public class CreateCountryDto : BaseCountryDto
     {
-        [RequiredForCreate(ErrorMessage = "Name is required for creation")]
+        //TODO: Validate properties in dto with -> Required
+        [Required(ErrorMessage = "Name is required for creation")]
         public override string Name { get; set; }
     }
 }
