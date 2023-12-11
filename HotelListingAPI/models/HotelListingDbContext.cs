@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace HotelListingAPI.Data
+namespace HotelListingAPI.Models
 {
     public class HotelListingDbContext : DbContext
     {
@@ -60,7 +60,7 @@ namespace HotelListingAPI.Data
                      Address = "Nassua",
                      CountryId = 2,
                      Rating = 4
-                 }  );
+                 });
         }
     }
 }
