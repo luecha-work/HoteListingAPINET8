@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using AutoMapper;
 using HotelListingAPI.Dtos.Country;
 using HotelListingAPI.Dtos.Hotels;
+using HotelListingAPI.Dtos.Users;
 using HotelListingAPI.Entitys;
 
 //TODO: Add Maper Data 2
@@ -26,6 +27,8 @@ namespace HotelListingAPI.Configurations
             CreateMap<Hotel, HotelDto>()
                 .ReverseMap();
             CreateMap<Hotel, CreateHotelDto>().ReverseMap();
+
+            CreateMap<ApiUserDto, ApiUser>().ReverseMap();
         }
     }
 }

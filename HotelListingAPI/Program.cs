@@ -3,6 +3,7 @@ using HotelListingAPI.Configurations;
 using HotelListingAPI.Entitys;
 using HotelListingAPI.Models.Contracts;
 using HotelListingAPI.Repositorys;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Serilog;
 
@@ -19,11 +20,17 @@ builder
         options.UseSqlServer(connectionString);
     });
 
+// TODO: Add IdentityCore for Authen
+builder
+    .Services
+    .AddIdentityCore<ApiUser>()
+    .AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<HotelListingDbContext>();
+
 builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-
 builder.Services.AddSwaggerGen();
 
 //TODO: Add cors url1
