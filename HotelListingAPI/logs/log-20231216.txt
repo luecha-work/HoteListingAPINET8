@@ -29,3 +29,8 @@
 2023-12-16 16:27:30.989 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
 2023-12-16 16:27:36.454 +07:00 [WRN] Failed to determine the https port for redirect.
 2023-12-16 16:27:37.869 +07:00 [INF] HTTP GET /api/Hotels responded 200 in 1417.6281 ms
+2023-12-16 16:30:43.398 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-16 16:30:43.434 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-16 16:30:43.435 +07:00 [INF] Hosting environment: Development
+2023-12-16 16:30:43.435 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-16 16:36:27.432 +07:00 [INF] Application is shutting down...
