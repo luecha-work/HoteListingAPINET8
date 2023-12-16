@@ -39,5 +39,21 @@ namespace HotelListingAPI.Controllers
 
             return Ok();
         }
+
+        [HttpPost("login")]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        public async Task<ActionResult> Login(LoginDto loginDto)
+        {
+            var authResponse = await this._authManager.Login(loginDto);
+
+            if (authResponse == null)
+            {
+                return Unauthorized();
+            }
+
+            return Ok(authResponse);
+        }
     }
 }
