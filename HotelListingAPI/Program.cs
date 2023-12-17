@@ -24,11 +24,27 @@ builder
     });
 
 // TODO: Add IdentityCore for Authen
+// builder
+//     .Services
+//     .AddIdentityCore<ApiUser>()
+//     .AddRoles<IdentityRole>()
+//     .AddTokenProvider<DataProtectorTokenProvider<ApiUser>>("HotelListingApi")
+//     .AddEntityFrameworkStores<HotelListingDbContext>()
+//     .AddDefaultTokenProviders();
+
 builder
     .Services
-    .AddIdentityCore<ApiUser>()
+    .AddIdentityCore<ApiUser>(options =>
+    {
+        // Configure identity options if needed
+        options.Password.RequireDigit = true;
+        options.Password.RequireLowercase = true;
+        // ... other configurations
+    })
     .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<HotelListingDbContext>();
+    .AddTokenProvider<DataProtectorTokenProvider<ApiUser>>("HotelListingApi")
+    .AddEntityFrameworkStores<HotelListingDbContext>()
+    .AddDefaultTokenProviders();
 
 builder.Services.AddControllers();
 
