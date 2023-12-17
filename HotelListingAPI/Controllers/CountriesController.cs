@@ -20,12 +20,18 @@ namespace HotelListingAPI.Controllers
         //TODO: setup to use auto-mapper data 1
         private readonly IMapper _mapper;
         private readonly ICountriesRepository _countriesRepository;
+        private readonly ILogger<CountriesController> _logger;
 
-        public CountriesController(IMapper mapper, ICountriesRepository countriesRepository)
+        public CountriesController(
+            IMapper mapper,
+            ICountriesRepository countriesRepository,
+            ILogger<CountriesController> logger
+        )
         {
             //TODO: setup to use auto-mapper data 2
             this._mapper = mapper;
             this._countriesRepository = countriesRepository;
+            this._logger = logger;
         }
 
         // GET: api/Countries
@@ -46,6 +52,7 @@ namespace HotelListingAPI.Controllers
         [Authorize]
         public async Task<ActionResult<CountryDto>> GetCountry(int id)
         {
+            this._logger.LogWarning($"Record found in {nameof(GetCountry)}. with Id: {id}. ");
             var country = await _countriesRepository.GetDetails(id);
 
             Console.WriteLine("country" + country);

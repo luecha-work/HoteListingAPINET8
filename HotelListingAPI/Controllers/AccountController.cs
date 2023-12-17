@@ -13,10 +13,12 @@ namespace HotelListingAPI.Controllers
     public class AccountController : ControllerBase
     {
         private readonly IAuthManager _authManager;
+        private readonly ILogger<AccountController> _logger;
 
-        public AccountController(IAuthManager authManager)
+        public AccountController(IAuthManager authManager, ILogger<AccountController> logger)
         {
             this._authManager = authManager;
+            this._logger = logger;
         }
 
         [HttpPost("register")]
@@ -25,19 +27,36 @@ namespace HotelListingAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult> Register([FromBody] ApiUserDto apiUserDto)
         {
-            var errors = await this._authManager.Register(apiUserDto);
+            this._logger.LogInformation($"Register Attemt for {apiUserDto.Email}");
 
-            if (errors.Any())
+            try
             {
-                foreach (var error in errors)
+                var errors = await this._authManager.Register(apiUserDto);
+
+                if (errors.Any())
                 {
-                    ModelState.AddModelError(error.Code, error.Description);
+                    foreach (var error in errors)
+                    {
+                        ModelState.AddModelError(error.Code, error.Description);
+                    }
+
+                    return BadRequest(ModelState);
                 }
 
-                return BadRequest(ModelState);
+                return Ok();
             }
+            catch (Exception ex)
+            {
+                this._logger.LogError(
+                    ex,
+                    $"Something Went Wrong in the {nameof(Register)} - User Register attempt for {apiUserDto.Email}"
+                );
 
-            return Ok();
+                return Problem(
+                    $"Something Went Wrong in the {nameof(Register)}. Please contact support.",
+                    statusCode: 500
+                );
+            }
         }
 
         [HttpPost("login")]
