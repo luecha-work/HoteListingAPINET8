@@ -121,24 +121,39 @@ namespace HotelListingAPI.Repositorys
 
         public async Task<string> CreateRefreshToken()
         {
-            Console.WriteLine("start refresh token 1");
-            await _userManager.RemoveAuthenticationTokenAsync(_user, _loginProvider, _refreshToken);
+            this._logger.LogWarning($"CreateRefreshToken -> {_user != null}");
+            if (_user != null)
+            {
+                await _userManager.RemoveAuthenticationTokenAsync(
+                    _user,
+                    _loginProvider,
+                    _refreshToken
+                );
 
-            var newRefreshToken = await _userManager.GenerateUserTokenAsync(
-                _user,
-                _loginProvider,
-                _refreshToken
-            );
-            Console.WriteLine("GenerateUserTokenAsynced.");
-            var result = await _userManager.SetAuthenticationTokenAsync(
-                _user,
-                _loginProvider,
-                _refreshToken,
-                newRefreshToken
-            );
+                var newRefreshToken = await _userManager.GenerateUserTokenAsync(
+                    _user,
+                    _loginProvider,
+                    _refreshToken
+                );
+                Console.WriteLine("GenerateUserTokenAsynced.");
+                var result = await _userManager.SetAuthenticationTokenAsync(
+                    _user,
+                    _loginProvider,
+                    _refreshToken,
+                    newRefreshToken
+                );
 
-            Console.WriteLine("to return");
-            return newRefreshToken;
+                Console.WriteLine("to return");
+                Console.WriteLine($"newRefreshToken is {newRefreshToken}");
+                return newRefreshToken;
+            }
+            else
+            {
+                // Handle the case where _user is null, e.g., log an error or throw an exception
+                Console.WriteLine("_user is null. Cannot create refresh token.");
+                // You might want to throw an exception or return an error message here.
+                return null; // or throw new SomeException("User is null");
+            }
         }
 
         public async Task<AuthResponseDto> VerifyRefreshToken(AuthResponseDto request)

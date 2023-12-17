@@ -19,6 +19,7 @@ namespace HotelListingAPI.Controllers
         {
             this._authManager = authManager;
             this._logger = logger;
+            this._logger = logger;
         }
 
         [HttpPost("register")]
@@ -65,14 +66,23 @@ namespace HotelListingAPI.Controllers
         [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult> Login([FromBody] LoginDto loginDto)
         {
-            var authResponse = await this._authManager.Login(loginDto);
-
-            if (authResponse == null)
+            this._logger.LogInformation($"Loging Attempt for {loginDto.Email}");
+            try
             {
-                return Unauthorized();
-            }
+                var authResponse = await this._authManager.Login(loginDto);
 
-            return Ok(authResponse);
+                if (authResponse == null)
+                {
+                    return Unauthorized();
+                }
+
+                return Ok(authResponse);
+            }
+            catch (Exception ex)
+            {
+                this._logger.LogError(ex, $"Something Went Wrong in the {nameof(Login)}");
+                return Problem($"Something Went Wrong in the {nameof(Login)}", statusCode: 500);
+            }
         }
 
         [HttpPost("refresh-token")]

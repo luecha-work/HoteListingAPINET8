@@ -1,455 +1,28 @@
-2023-12-17 10:24:49.511 +07:00 [INF] Now listening on: http://localhost:5233
-2023-12-17 10:24:49.835 +07:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-12-17 10:24:49.836 +07:00 [INF] Hosting environment: Development
-2023-12-17 10:24:49.837 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
-2023-12-17 10:25:29.078 +07:00 [WRN] Failed to determine the https port for redirect.
-2023-12-17 10:26:20.748 +07:00 [ERR] An error occurred using the connection to database 'HotelListAPIDb' on server '(localdb)\MSSQLLocalDB'.
-2023-12-17 10:26:20.844 +07:00 [ERR] An exception occurred while iterating over the results of a query for context type 'HotelListingAPI.Entitys.HotelListingDbContext'.
-Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=40504; handshake=33; 
- ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
-   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
-   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
-   at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(SqlConnectionEncryptOption encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired, Boolean tlsFirst, String serverCert)
-   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
-   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:62322191-df7f-49c3-8874-36bdeb457789
-Error Number:-2,State:0,Class:11
-Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=40504; handshake=33; 
- ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
-   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
-   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
-   at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(SqlConnectionEncryptOption encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired, Boolean tlsFirst, String serverCert)
-   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
-   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-ClientConnectionId:62322191-df7f-49c3-8874-36bdeb457789
-Error Number:-2,State:0,Class:11
-2023-12-17 10:26:20.906 +07:00 [ERR] HTTP POST /api/Account/login responded 500 in 51834.2076 ms
-Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=40504; handshake=33; 
- ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
-   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
-   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
-   at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(SqlConnectionEncryptOption encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired, Boolean tlsFirst, String serverCert)
-   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
-   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
-   at Microsoft.AspNetCore.Identity.UserManager`1.FindByEmailAsync(String email)
-   at HotelListingAPI.Repositorys.AuthManager.Login(LoginDto loginDto) in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Repositorys\AuthManager.cs:line 36
-   at HotelListingAPI.Controllers.AccountController.Login(LoginDto loginDto) in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Controllers\AccountController.cs:line 49
-   at lambda_method6(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-ClientConnectionId:62322191-df7f-49c3-8874-36bdeb457789
-Error Number:-2,State:0,Class:11
-2023-12-17 10:26:21.051 +07:00 [ERR] An unhandled exception has occurred while executing the request.
-Microsoft.Data.SqlClient.SqlException (0x80131904): Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=40504; handshake=33; 
- ---> System.ComponentModel.Win32Exception (258): The wait operation timed out.
-   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
-   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ThrowExceptionAndWarning(Boolean callerHasConnectionLock, Boolean asyncClose)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniError(TdsParserStateObject stateObj, UInt32 error)
-   at Microsoft.Data.SqlClient.TdsParserStateObject.ReadSniSyncOverAsync()
-   at Microsoft.Data.SqlClient.TdsParserStateObject.TryReadNetworkPacket()
-   at Microsoft.Data.SqlClient.TdsParser.ConsumePreLoginHandshake(SqlConnectionEncryptOption encrypt, Boolean trustServerCert, Boolean integratedSecurity, Boolean& marsCapable, Boolean& fedAuthRequired, Boolean tlsFirst, String serverCert)
-   at Microsoft.Data.SqlClient.TdsParser.Connect(ServerInfo serverInfo, SqlInternalConnectionTds connHandler, Boolean ignoreSniOpenTimeout, Int64 timerExpire, SqlConnectionString connectionOptions, Boolean withFailover)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.AttemptOneLogin(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean ignoreSniOpenTimeout, TimeoutTimer timeout, Boolean withFailover)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.LoginNoFailover(ServerInfo serverInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString connectionOptions, SqlCredential credential, TimeoutTimer timeout)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds.OpenLoginEnlist(TimeoutTimer timeout, SqlConnectionString connectionOptions, SqlCredential credential, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance)
-   at Microsoft.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, Boolean applyTransientFaultHandling, String accessToken, DbConnectionPool pool)
-   at Microsoft.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
-   at Microsoft.Data.ProviderBase.DbConnectionPool.WaitForPendingOpen()
---- End of stack trace from previous location ---
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenInternalAsync(Boolean errorsExpected, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalConnection.OpenAsync(CancellationToken cancellationToken, Boolean errorsExpected)
-   at Microsoft.EntityFrameworkCore.Storage.RelationalCommand.ExecuteReaderAsync(RelationalCommandParameterObject parameterObject, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.InitializeReaderAsync(AsyncEnumerator enumerator, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.Internal.SingleQueryingEnumerable`1.AsyncEnumerator.MoveNextAsync()
-   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
-   at Microsoft.EntityFrameworkCore.Query.ShapedQueryCompilingExpressionVisitor.SingleOrDefaultAsync[TSource](IAsyncEnumerable`1 asyncEnumerable, CancellationToken cancellationToken)
-   at Microsoft.AspNetCore.Identity.UserManager`1.FindByEmailAsync(String email)
-   at HotelListingAPI.Repositorys.AuthManager.Login(LoginDto loginDto) in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Repositorys\AuthManager.cs:line 36
-   at HotelListingAPI.Controllers.AccountController.Login(LoginDto loginDto) in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Controllers\AccountController.cs:line 49
-   at lambda_method6(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
-ClientConnectionId:62322191-df7f-49c3-8874-36bdeb457789
-Error Number:-2,State:0,Class:11
-2023-12-17 10:26:33.463 +07:00 [INF] HTTP GET /api/Countries responded 200 in 1786.8431 ms
-2023-12-17 10:26:45.314 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 2147.5046 ms
-2023-12-17 10:28:31.509 +07:00 [INF] HTTP GET /api/Hotels responded 200 in 128.8604 ms
-2023-12-17 10:28:35.040 +07:00 [INF] HTTP GET /api/Countries responded 401 in 17.8435 ms
-2023-12-17 10:31:22.055 +07:00 [INF] HTTP GET /api/Countries responded 401 in 5.4126 ms
-2023-12-17 10:31:41.346 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 446.8817 ms
-2023-12-17 10:31:50.594 +07:00 [INF] HTTP GET /api/Countries responded 200 in 18.0715 ms
-2023-12-17 10:33:58.732 +07:00 [INF] HTTP GET /api/Countries responded 200 in 16.1732 ms
-2023-12-17 10:34:03.203 +07:00 [INF] HTTP GET /api/Countries responded 401 in 0.2993 ms
-2023-12-17 10:34:07.802 +07:00 [INF] HTTP GET /api/Countries responded 200 in 6.3944 ms
-2023-12-17 10:34:13.550 +07:00 [INF] HTTP GET /api/Countries responded 401 in 1.1175 ms
-2023-12-17 10:34:18.155 +07:00 [INF] HTTP GET /api/Countries responded 200 in 5.7540 ms
-2023-12-17 10:40:22.179 +07:00 [INF] HTTP GET /api/Countries/2 responded 200 in 426.3903 ms
-2023-12-17 10:40:34.995 +07:00 [INF] HTTP GET /api/Countries/3 responded 200 in 16.0851 ms
-2023-12-17 10:46:11.956 +07:00 [INF] HTTP GET /api/Countries/3 responded 401 in 0.2151 ms
-2023-12-17 10:46:15.737 +07:00 [INF] HTTP GET /api/Countries responded 200 in 17.3888 ms
-2023-12-17 10:47:47.102 +07:00 [ERR] An unhandled exception has occurred while executing the request.
-Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - HotelListingAPI.Controllers.CountriesController.PostCountry (HotelListingAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
-   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
-   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
-   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
-   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
-2023-12-17 10:48:47.682 +07:00 [INF] Now listening on: http://localhost:5233
-2023-12-17 10:48:47.812 +07:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-12-17 10:48:47.814 +07:00 [INF] Hosting environment: Development
-2023-12-17 10:48:47.815 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
-2023-12-17 11:08:32.522 +07:00 [WRN] Failed to determine the https port for redirect.
-2023-12-17 11:08:49.637 +07:00 [INF] HTTP GET /api/Countries responded 200 in 17117.7697 ms
-2023-12-17 11:09:13.038 +07:00 [INF] HTTP GET /api/Countries/3 responded 401 in 32.2399 ms
-2023-12-17 11:09:57.726 +07:00 [INF] HTTP GET /api/Countries/3 responded 401 in 11.9872 ms
-2023-12-17 11:10:18.463 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 1312.7645 ms
-2023-12-17 11:10:27.739 +07:00 [INF] HTTP GET /api/Countries/3 responded 200 in 480.9477 ms
-2023-12-17 11:10:33.490 +07:00 [INF] HTTP GET /api/Countries responded 200 in 11.7104 ms
-2023-12-17 11:10:53.532 +07:00 [INF] HTTP GET /api/Countries responded 200 in 14.5375 ms
-2023-12-17 12:40:34.812 +07:00 [INF] Now listening on: http://localhost:5233
-2023-12-17 12:40:34.865 +07:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-12-17 12:40:34.866 +07:00 [INF] Hosting environment: Development
-2023-12-17 12:40:34.866 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
-2023-12-17 12:47:08.897 +07:00 [INF] Application is shutting down...
-2023-12-17 12:47:30.562 +07:00 [INF] Now listening on: http://localhost:5233
-2023-12-17 12:47:30.618 +07:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-12-17 12:47:30.619 +07:00 [INF] Hosting environment: Development
-2023-12-17 12:47:30.619 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
-2023-12-17 12:47:47.440 +07:00 [WRN] Failed to determine the https port for redirect.
-2023-12-17 12:47:51.354 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 3915.7984 ms
-2023-12-17 13:58:30.546 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 1979.0680 ms
-2023-12-17 14:01:05.117 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 101.5835 ms
-2023-12-17 14:03:46.955 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 97.5398 ms
-2023-12-17 14:04:02.401 +07:00 [ERR] HTTP POST /api/Account/refresh-token responded 500 in 8.6079 ms
+2023-12-17 18:14:22.035 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-17 18:14:22.080 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-17 18:14:22.080 +07:00 [INF] Hosting environment: Development
+2023-12-17 18:14:22.081 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-17 18:15:46.269 +07:00 [INF] Application is shutting down...
+2023-12-17 22:29:41.177 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-17 22:29:41.221 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-17 22:29:41.222 +07:00 [INF] Hosting environment: Development
+2023-12-17 22:29:41.222 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-17 22:34:50.561 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-12-17 22:34:50.870 +07:00 [INF] Loging Attempt for user@example.com
+2023-12-17 22:34:50.871 +07:00 [WRN] Looking for user with email user@example.com
+2023-12-17 22:34:55.104 +07:00 [WRN] User with email user@example.com was not found.
+2023-12-17 22:34:55.117 +07:00 [INF] HTTP POST /api/Account/login responded 401 in 4556.6637 ms
+2023-12-17 22:35:04.561 +07:00 [INF] Loging Attempt for user@example.com
+2023-12-17 22:35:04.561 +07:00 [WRN] Looking for user with email user@example.com
+2023-12-17 22:35:04.759 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiMDAzOGE2NGYtNmU1NC00MDc0LWI4MjktNTBiYTliODkwNmQ4IiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiNDVmYWI5MzMtOTcwYi00MWJkLThjMjUtOTkyOWE5MWY5NDNjIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTcwMjgyNzkwNCwiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.SSynrdftsjMlHMhtCYa8134r5RZ6Bc5ZY6M9XZtI0Xk
+2023-12-17 22:35:04.955 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 397.4547 ms
+2023-12-17 22:35:09.935 +07:00 [ERR] HTTP POST /api/Account/refresh-token responded 500 in 19.0768 ms
 System.ArgumentNullException: Value cannot be null. (Parameter 'user')
    at System.ArgumentNullException.Throw(String paramName)
    at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
    at Microsoft.AspNetCore.Identity.UserManager`1.RemoveAuthenticationTokenAsync(TUser user, String loginProvider, String tokenName)
    at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken()
    at HotelListingAPI.Controllers.AccountController.RefreshToken(AuthResponseDto request)
-   at lambda_method182(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-2023-12-17 14:04:02.410 +07:00 [ERR] An unhandled exception has occurred while executing the request.
-System.ArgumentNullException: Value cannot be null. (Parameter 'user')
-   at System.ArgumentNullException.Throw(String paramName)
-   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
-   at Microsoft.AspNetCore.Identity.UserManager`1.RemoveAuthenticationTokenAsync(TUser user, String loginProvider, String tokenName)
-   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken()
-   at HotelListingAPI.Controllers.AccountController.RefreshToken(AuthResponseDto request)
-   at lambda_method182(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
-2023-12-17 14:04:10.652 +07:00 [INF] HTTP POST /api/Account/refresh-token responded 400 in 13.5864 ms
-2023-12-17 14:04:16.068 +07:00 [ERR] HTTP POST /api/Account/refresh-token responded 500 in 1.4631 ms
-System.ArgumentNullException: Value cannot be null. (Parameter 'user')
-   at System.ArgumentNullException.Throw(String paramName)
-   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
-   at Microsoft.AspNetCore.Identity.UserManager`1.RemoveAuthenticationTokenAsync(TUser user, String loginProvider, String tokenName)
-   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken()
-   at HotelListingAPI.Controllers.AccountController.RefreshToken(AuthResponseDto request)
-   at lambda_method182(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-2023-12-17 14:04:16.070 +07:00 [ERR] An unhandled exception has occurred while executing the request.
-System.ArgumentNullException: Value cannot be null. (Parameter 'user')
-   at System.ArgumentNullException.Throw(String paramName)
-   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
-   at Microsoft.AspNetCore.Identity.UserManager`1.RemoveAuthenticationTokenAsync(TUser user, String loginProvider, String tokenName)
-   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken()
-   at HotelListingAPI.Controllers.AccountController.RefreshToken(AuthResponseDto request)
-   at lambda_method182(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
-2023-12-17 14:05:30.210 +07:00 [ERR] HTTP POST /api/Account/login responded 500 in 189.2507 ms
-System.NotSupportedException: No IUserTwoFactorTokenProvider<TUser> named 'HotelListingApi' is registered.
-   at Microsoft.AspNetCore.Identity.UserManager`1.GenerateUserTokenAsync(TUser user, String tokenProvider, String purpose)
-   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken()
-   at HotelListingAPI.Repositorys.AuthManager.Login(LoginDto loginDto)
-   at HotelListingAPI.Controllers.AccountController.Login(LoginDto loginDto)
-   at lambda_method190(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-2023-12-17 14:05:30.211 +07:00 [ERR] An unhandled exception has occurred while executing the request.
-System.NotSupportedException: No IUserTwoFactorTokenProvider<TUser> named 'HotelListingApi' is registered.
-   at Microsoft.AspNetCore.Identity.UserManager`1.GenerateUserTokenAsync(TUser user, String tokenProvider, String purpose)
-   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken()
-   at HotelListingAPI.Repositorys.AuthManager.Login(LoginDto loginDto)
-   at HotelListingAPI.Controllers.AccountController.Login(LoginDto loginDto)
-   at lambda_method190(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
-2023-12-17 14:07:37.331 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 77.3749 ms
-2023-12-17 14:08:09.707 +07:00 [ERR] HTTP POST /api/Account/login responded 500 in 95.4310 ms
-System.NotSupportedException: No IUserTwoFactorTokenProvider<TUser> named 'HotelListingApi' is registered.
-   at Microsoft.AspNetCore.Identity.UserManager`1.GenerateUserTokenAsync(TUser user, String tokenProvider, String purpose)
-   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken()
-   at HotelListingAPI.Repositorys.AuthManager.Login(LoginDto loginDto)
-   at HotelListingAPI.Controllers.AccountController.Login(LoginDto loginDto)
-   at lambda_method281(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-2023-12-17 14:08:09.708 +07:00 [ERR] An unhandled exception has occurred while executing the request.
-System.NotSupportedException: No IUserTwoFactorTokenProvider<TUser> named 'HotelListingApi' is registered.
-   at Microsoft.AspNetCore.Identity.UserManager`1.GenerateUserTokenAsync(TUser user, String tokenProvider, String purpose)
-   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken()
-   at HotelListingAPI.Repositorys.AuthManager.Login(LoginDto loginDto)
-   at HotelListingAPI.Controllers.AccountController.Login(LoginDto loginDto)
-   at lambda_method281(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
-2023-12-17 14:11:47.788 +07:00 [INF] Now listening on: http://localhost:5233
-2023-12-17 14:11:47.859 +07:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-12-17 14:11:47.860 +07:00 [INF] Hosting environment: Development
-2023-12-17 14:11:47.861 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
-2023-12-17 14:12:21.471 +07:00 [WRN] Failed to determine the https port for redirect.
-2023-12-17 14:12:28.329 +07:00 [ERR] HTTP POST /api/Account/login responded 500 in 6858.9213 ms
-System.NotSupportedException: No IUserTwoFactorTokenProvider<TUser> named 'HotelListingApi' is registered.
-   at Microsoft.AspNetCore.Identity.UserManager`1.GenerateUserTokenAsync(TUser user, String tokenProvider, String purpose)
-   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken() in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Repositorys\AuthManager.cs:line 115
-   at HotelListingAPI.Repositorys.AuthManager.Login(LoginDto loginDto) in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Repositorys\AuthManager.cs:line 51
-   at HotelListingAPI.Controllers.AccountController.Login(LoginDto loginDto) in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Controllers\AccountController.cs:line 49
-   at lambda_method6(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-2023-12-17 14:12:28.346 +07:00 [ERR] An unhandled exception has occurred while executing the request.
-System.NotSupportedException: No IUserTwoFactorTokenProvider<TUser> named 'HotelListingApi' is registered.
-   at Microsoft.AspNetCore.Identity.UserManager`1.GenerateUserTokenAsync(TUser user, String tokenProvider, String purpose)
-   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken() in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Repositorys\AuthManager.cs:line 115
-   at HotelListingAPI.Repositorys.AuthManager.Login(LoginDto loginDto) in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Repositorys\AuthManager.cs:line 51
-   at HotelListingAPI.Controllers.AccountController.Login(LoginDto loginDto) in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Controllers\AccountController.cs:line 49
-   at lambda_method6(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeInnerFilterAsync>g__Awaited|13_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
-2023-12-17 14:17:29.378 +07:00 [INF] Application is shutting down...
-2023-12-17 14:17:45.006 +07:00 [INF] Now listening on: http://localhost:5233
-2023-12-17 14:17:45.052 +07:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-12-17 14:17:45.053 +07:00 [INF] Hosting environment: Development
-2023-12-17 14:17:45.053 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
-2023-12-17 14:18:00.351 +07:00 [WRN] Failed to determine the https port for redirect.
-2023-12-17 14:18:02.149 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 1800.2386 ms
-2023-12-17 14:18:52.417 +07:00 [ERR] HTTP POST /api/Account/refresh-token responded 500 in 16.0235 ms
-System.ArgumentNullException: Value cannot be null. (Parameter 'user')
-   at System.ArgumentNullException.Throw(String paramName)
-   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
-   at Microsoft.AspNetCore.Identity.UserManager`1.RemoveAuthenticationTokenAsync(TUser user, String loginProvider, String tokenName)
-   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken() in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Repositorys\AuthManager.cs:line 115
-   at HotelListingAPI.Controllers.AccountController.RefreshToken(AuthResponseDto request) in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Controllers\AccountController.cs:line 65
    at lambda_method285(Closure, Object)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
@@ -464,13 +37,13 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'user')
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-2023-12-17 14:18:52.426 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+2023-12-17 22:35:09.940 +07:00 [ERR] Something Wentwhile processing /api/Account/refresh-token
 System.ArgumentNullException: Value cannot be null. (Parameter 'user')
    at System.ArgumentNullException.Throw(String paramName)
    at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
    at Microsoft.AspNetCore.Identity.UserManager`1.RemoveAuthenticationTokenAsync(TUser user, String loginProvider, String tokenName)
-   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken() in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Repositorys\AuthManager.cs:line 115
-   at HotelListingAPI.Controllers.AccountController.RefreshToken(AuthResponseDto request) in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Controllers\AccountController.cs:line 65
+   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken()
+   at HotelListingAPI.Controllers.AccountController.RefreshToken(AuthResponseDto request)
    at lambda_method285(Closure, Object)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
@@ -485,17 +58,15 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'user')
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
-2023-12-17 14:21:16.002 +07:00 [ERR] HTTP POST /api/Account/refresh-token responded 500 in 22.2007 ms
+   at HotelListingAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context)
+2023-12-17 22:35:10.084 +07:00 [ERR] An unhandled exception has occurred while executing the request.
 System.ArgumentNullException: Value cannot be null. (Parameter 'user')
    at System.ArgumentNullException.Throw(String paramName)
    at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
    at Microsoft.AspNetCore.Identity.UserManager`1.RemoveAuthenticationTokenAsync(TUser user, String loginProvider, String tokenName)
    at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken()
    at HotelListingAPI.Controllers.AccountController.RefreshToken(AuthResponseDto request)
-   at lambda_method293(Closure, Object)
+   at lambda_method285(Closure, Object)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -509,14 +80,20 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'user')
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-2023-12-17 14:21:16.005 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+   at HotelListingAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context)
+   at HotelListingAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context)
+   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-17 22:35:10.087 +07:00 [WRN] The response has already started, the error page middleware will not be executed.
+2023-12-17 22:35:10.090 +07:00 [ERR] Connection id "0HMVV2JV1R3BK", Request id "0HMVV2JV1R3BK:00000012": An unhandled exception was thrown by the application.
 System.ArgumentNullException: Value cannot be null. (Parameter 'user')
    at System.ArgumentNullException.Throw(String paramName)
    at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
    at Microsoft.AspNetCore.Identity.UserManager`1.RemoveAuthenticationTokenAsync(TUser user, String loginProvider, String tokenName)
    at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken()
    at HotelListingAPI.Controllers.AccountController.RefreshToken(AuthResponseDto request)
-   at lambda_method293(Closure, Object)
+   at lambda_method285(Closure, Object)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
    at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
@@ -530,114 +107,67 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'user')
    at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
    at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
    at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
+   at HotelListingAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context)
+   at HotelListingAPI.Middleware.ExceptionMiddleware.InvokeAsync(HttpContext context)
    at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
-2023-12-17 14:21:49.292 +07:00 [INF] Now listening on: http://localhost:5233
-2023-12-17 14:21:49.338 +07:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-12-17 14:21:49.339 +07:00 [INF] Hosting environment: Development
-2023-12-17 14:21:49.339 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
-2023-12-17 14:22:00.585 +07:00 [WRN] Failed to determine the https port for redirect.
-2023-12-17 14:22:00.864 +07:00 [ERR] HTTP POST /api/Account/refresh-token responded 500 in 281.1646 ms
-System.ArgumentNullException: Value cannot be null. (Parameter 'user')
-   at System.ArgumentNullException.Throw(String paramName)
-   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
-   at Microsoft.AspNetCore.Identity.UserManager`1.RemoveAuthenticationTokenAsync(TUser user, String loginProvider, String tokenName)
-   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken() in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Repositorys\AuthManager.cs:line 115
-   at HotelListingAPI.Controllers.AccountController.RefreshToken(AuthResponseDto request) in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Controllers\AccountController.cs:line 65
-   at lambda_method6(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-2023-12-17 14:22:00.887 +07:00 [ERR] An unhandled exception has occurred while executing the request.
-System.ArgumentNullException: Value cannot be null. (Parameter 'user')
-   at System.ArgumentNullException.Throw(String paramName)
-   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
-   at Microsoft.AspNetCore.Identity.UserManager`1.RemoveAuthenticationTokenAsync(TUser user, String loginProvider, String tokenName)
-   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken() in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Repositorys\AuthManager.cs:line 115
-   at HotelListingAPI.Controllers.AccountController.RefreshToken(AuthResponseDto request) in C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\Controllers\AccountController.cs:line 65
-   at lambda_method6(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
-2023-12-17 15:31:06.452 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 3960.4361 ms
-2023-12-17 15:31:26.151 +07:00 [ERR] HTTP POST /api/Account/refresh-token responded 500 in 16.1429 ms
-System.ArgumentNullException: Value cannot be null. (Parameter 'user')
-   at System.ArgumentNullException.Throw(String paramName)
-   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
-   at Microsoft.AspNetCore.Identity.UserManager`1.RemoveAuthenticationTokenAsync(TUser user, String loginProvider, String tokenName)
-   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken()
-   at HotelListingAPI.Controllers.AccountController.RefreshToken(AuthResponseDto request)
-   at lambda_method293(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-2023-12-17 15:31:26.153 +07:00 [ERR] An unhandled exception has occurred while executing the request.
-System.ArgumentNullException: Value cannot be null. (Parameter 'user')
-   at System.ArgumentNullException.Throw(String paramName)
-   at System.ArgumentNullException.ThrowIfNull(Object argument, String paramName)
-   at Microsoft.AspNetCore.Identity.UserManager`1.RemoveAuthenticationTokenAsync(TUser user, String loginProvider, String tokenName)
-   at HotelListingAPI.Repositorys.AuthManager.CreateRefreshToken()
-   at HotelListingAPI.Controllers.AccountController.RefreshToken(AuthResponseDto request)
-   at lambda_method293(Closure, Object)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ActionMethodExecutor.TaskOfActionResultExecutor.Execute(ActionContext actionContext, IActionResultTypeMapper mapper, ObjectMethodExecutor executor, Object controller, Object[] arguments)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeActionMethodAsync>g__Awaited|12_0(ControllerActionInvoker invoker, ValueTask`1 actionResultValueTask)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.<InvokeNextActionFilterAsync>g__Awaited|10_0(ControllerActionInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Rethrow(ActionExecutedContextSealed context)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ControllerActionInvoker.InvokeInnerFilterAsync()
---- End of stack trace from previous location ---
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
-   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
-   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
-   at Serilog.AspNetCore.RequestLoggingMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.SwaggerUI.SwaggerUIMiddleware.Invoke(HttpContext httpContext)
-   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
-   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
-2023-12-17 15:32:35.855 +07:00 [INF] Now listening on: http://localhost:5233
-2023-12-17 15:32:35.891 +07:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-12-17 15:32:35.891 +07:00 [INF] Hosting environment: Development
-2023-12-17 15:32:35.891 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
-2023-12-17 15:46:58.326 +07:00 [INF] Now listening on: http://localhost:5233
-2023-12-17 15:46:58.370 +07:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-12-17 15:46:58.370 +07:00 [INF] Hosting environment: Development
-2023-12-17 15:46:58.370 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
-2023-12-17 15:56:32.270 +07:00 [INF] Now listening on: http://localhost:5233
-2023-12-17 15:56:32.312 +07:00 [INF] Application started. Press Ctrl+C to shut down.
-2023-12-17 15:56:32.313 +07:00 [INF] Hosting environment: Development
-2023-12-17 15:56:32.313 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+   at Microsoft.AspNetCore.Watch.BrowserRefresh.BrowserRefreshMiddleware.InvokeAsync(HttpContext context)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Http.HttpProtocol.ProcessRequests[TContext](IHttpApplication`1 application)
+2023-12-17 22:38:08.941 +07:00 [INF] Loging Attempt for user@example.com
+2023-12-17 22:38:08.941 +07:00 [WRN] Looking for user with email user@example.com
+2023-12-17 22:38:09.021 +07:00 [WRN] User with email user@example.com was not found.
+2023-12-17 22:38:09.024 +07:00 [INF] HTTP POST /api/Account/login responded 401 in 87.8117 ms
+2023-12-17 22:38:21.344 +07:00 [INF] Loging Attempt for user@example.com
+2023-12-17 22:38:21.344 +07:00 [WRN] Looking for user with email user@example.com
+2023-12-17 22:38:21.425 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiZTdkOTZhMWItMGJiYS00NGU2LWFjZWQtZDY4ZmExZGExNDMyIiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiNDVmYWI5MzMtOTcwYi00MWJkLThjMjUtOTkyOWE5MWY5NDNjIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTcwMjgyODEwMSwiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.JiZiCc8jsSmx5niysDOrUUQS7zWxQ7MFfwILoTI_3to
+2023-12-17 22:38:21.434 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 90.9173 ms
+2023-12-17 22:38:26.960 +07:00 [INF] Loging Attempt for user@example.com
+2023-12-17 22:38:26.960 +07:00 [WRN] Looking for user with email user@example.com
+2023-12-17 22:38:27.040 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiN2MxZTdlZGYtNDM4MS00NTViLTlhMjEtYTY5N2E0ZGM5NTQ0IiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiNDVmYWI5MzMtOTcwYi00MWJkLThjMjUtOTkyOWE5MWY5NDNjIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTcwMjgyODEwNywiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.RYon9e_rZOT_RTgCbbHMj6khyZQ82dVIvsv2aeM4ZwQ
+2023-12-17 22:38:27.060 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 101.2094 ms
+2023-12-17 22:38:35.793 +07:00 [INF] HTTP POST /api/Account/refresh-token responded 401 in 6.3574 ms
+2023-12-17 22:39:50.347 +07:00 [INF] Loging Attempt for user@example.com
+2023-12-17 22:39:50.347 +07:00 [WRN] Looking for user with email user@example.com
+2023-12-17 22:39:50.416 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiNWY5N2QwOWEtZTYxOS00ZmRlLWFmYzYtZmQzNTg3ZjRmYzliIiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiNDVmYWI5MzMtOTcwYi00MWJkLThjMjUtOTkyOWE5MWY5NDNjIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTcwMjgyODE5MCwiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.NHaZMdvW9Bu1BBLpkaFiYwblSMGPEZ0hPUIC88qBMmM
+2023-12-17 22:39:50.418 +07:00 [WRN] CreateRefreshToken -> True
+2023-12-17 22:39:50.427 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 83.9910 ms
+2023-12-17 22:40:01.352 +07:00 [WRN] CreateRefreshToken -> False
+2023-12-17 22:40:01.354 +07:00 [INF] HTTP POST /api/Account/refresh-token responded 401 in 6.3574 ms
+2023-12-17 22:41:07.524 +07:00 [INF] Loging Attempt for user@example.com
+2023-12-17 22:41:07.524 +07:00 [WRN] Looking for user with email user@example.com
+2023-12-17 22:41:07.601 +07:00 [WRN] User with email user@example.com was not found.
+2023-12-17 22:41:07.604 +07:00 [INF] HTTP POST /api/Account/login responded 401 in 84.6305 ms
+2023-12-17 22:41:13.012 +07:00 [INF] Loging Attempt for user@example.com
+2023-12-17 22:41:13.013 +07:00 [WRN] Looking for user with email user@example.com
+2023-12-17 22:41:13.085 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiYzVhYWY2ZGItMWI3Yy00MDM0LTg0N2EtMjY5OWM0ZmYxOGJmIiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiNDVmYWI5MzMtOTcwYi00MWJkLThjMjUtOTkyOWE5MWY5NDNjIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTcwMjgyODI3MywiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.1oUmT_YQfzSX9Lrx8hIucB4EOHgLqoQ7oNWsTH5ODD4
+2023-12-17 22:41:13.087 +07:00 [WRN] CreateRefreshToken -> True
+2023-12-17 22:41:13.097 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 85.7137 ms
+2023-12-17 22:41:24.013 +07:00 [WRN] CreateRefreshToken -> False
+2023-12-17 22:41:24.013 +07:00 [INF] HTTP POST /api/Account/refresh-token responded 401 in 5.1180 ms
+2023-12-17 22:41:37.020 +07:00 [INF] Loging Attempt for user@example.com
+2023-12-17 22:41:37.021 +07:00 [WRN] Looking for user with email user@example.com
+2023-12-17 22:41:37.099 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiZjAyMjc3MTItY2IwZC00NjUxLThkYTEtODZhMTcxMjE1ZjRhIiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiNDVmYWI5MzMtOTcwYi00MWJkLThjMjUtOTkyOWE5MWY5NDNjIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTcwMjgyODI5NywiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.Zt_se-dq-5q4IZFnVqlgzhrdemPZ086wMhW66NV_NIQ
+2023-12-17 22:41:37.099 +07:00 [WRN] CreateRefreshToken -> True
+2023-12-17 22:41:37.105 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 85.3666 ms
+2023-12-17 22:41:40.502 +07:00 [WRN] CreateRefreshToken -> False
+2023-12-17 22:41:40.503 +07:00 [INF] HTTP POST /api/Account/refresh-token responded 401 in 1.1623 ms
+2023-12-17 22:41:54.237 +07:00 [WRN] CreateRefreshToken -> False
+2023-12-17 22:41:54.237 +07:00 [INF] HTTP POST /api/Account/refresh-token responded 401 in 1.2675 ms
+2023-12-17 22:42:06.660 +07:00 [INF] Loging Attempt for user@example.com
+2023-12-17 22:42:06.660 +07:00 [WRN] Looking for user with email user@example.com
+2023-12-17 22:42:06.745 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiNjkxNjFmZDItY2ZkYS00ZTE5LWJmY2ItYzRhMjgzZTIyNTZiIiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiNDVmYWI5MzMtOTcwYi00MWJkLThjMjUtOTkyOWE5MWY5NDNjIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTcwMjgyODMyNiwiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.ETPqG0RoFZnWEICUnMCpXUm9Uq-kAPcWJxuZWSLa5B4
+2023-12-17 22:42:06.745 +07:00 [WRN] CreateRefreshToken -> True
+2023-12-17 22:42:06.752 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 92.5464 ms
+2023-12-17 22:42:43.743 +07:00 [WRN] CreateRefreshToken -> False
+2023-12-17 22:42:43.744 +07:00 [INF] HTTP POST /api/Account/refresh-token responded 401 in 1.0084 ms
+2023-12-17 22:42:47.852 +07:00 [WRN] CreateRefreshToken -> False
+2023-12-17 22:42:47.852 +07:00 [INF] HTTP POST /api/Account/refresh-token responded 401 in 0.9241 ms
+2023-12-17 22:42:54.397 +07:00 [INF] Loging Attempt for user@example.com
+2023-12-17 22:42:54.397 +07:00 [WRN] Looking for user with email user@example.com
+2023-12-17 22:42:54.472 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiOTg0MTQwYmUtOTEzOS00N2Q0LTg3MjgtNjhmYzMyM2FkZjExIiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiNDVmYWI5MzMtOTcwYi00MWJkLThjMjUtOTkyOWE5MWY5NDNjIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTcwMjgyODM3NCwiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.OkuRDCI7MD9BsIgYo7VmH7SC-JaNGj571iCQPNTGEFs
+2023-12-17 22:42:54.473 +07:00 [WRN] CreateRefreshToken -> True
+2023-12-17 22:42:54.479 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 82.3540 ms
+2023-12-17 22:43:05.576 +07:00 [WRN] CreateRefreshToken -> False
+2023-12-17 22:43:05.576 +07:00 [INF] HTTP POST /api/Account/refresh-token responded 401 in 1.0679 ms

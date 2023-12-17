@@ -2,6 +2,7 @@ using System.Reflection.Emit;
 using System.Text;
 using HotelListingAPI.Configurations;
 using HotelListingAPI.Entitys;
+using HotelListingAPI.Middleware;
 using HotelListingAPI.Models.Contracts;
 using HotelListingAPI.Repositorys;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
@@ -24,25 +25,25 @@ builder
     });
 
 // TODO: Add IdentityCore for Authen
-builder
-    .Services
-    .AddIdentityCore<ApiUser>()
-    .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<HotelListingDbContext>();
-
 // builder
 //     .Services
-//     .AddIdentityCore<ApiUser>(options =>
-//     {
-//         // Configure identity options if needed
-//         options.Password.RequireDigit = true;
-//         options.Password.RequireLowercase = true;
-//         // ... other configurations
-//     })
+//     .AddIdentityCore<ApiUser>()
 //     .AddRoles<IdentityRole>()
-//     .AddTokenProvider<DataProtectorTokenProvider<ApiUser>>("HotelListingApi")
-//     .AddEntityFrameworkStores<HotelListingDbContext>()
-//     .AddDefaultTokenProviders();
+//     .AddEntityFrameworkStores<HotelListingDbContext>();
+
+builder
+    .Services
+    .AddIdentityCore<ApiUser>(options =>
+    {
+        // Configure identity options if needed
+        options.Password.RequireDigit = true;
+        options.Password.RequireLowercase = true;
+        // ... other configurations
+    })
+    .AddRoles<IdentityRole>()
+    .AddTokenProvider<DataProtectorTokenProvider<ApiUser>>("HotelListingApi")
+    .AddEntityFrameworkStores<HotelListingDbContext>()
+    .AddDefaultTokenProviders();
 
 builder.Services.AddControllers();
 
@@ -105,6 +106,9 @@ if (app.Environment.IsDevelopment())
     app.UseSwagger();
     app.UseSwaggerUI();
 }
+
+//TODO: Add Middleware
+app.UseMiddleware<ExceptionMiddleware>();
 
 //TODO: Add Serilog2
 app.UseSerilogRequestLogging();
