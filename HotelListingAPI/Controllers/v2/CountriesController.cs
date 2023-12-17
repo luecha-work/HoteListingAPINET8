@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Threading.Tasks;
 using AutoMapper;
 using HotelListingAPI.Dtos.Country;
@@ -11,10 +12,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace HotelListingAPI.Controllers
+namespace HotelListingAPI.Controllers.v2
 {
-    [Route("api/[controller]")]
+    [Route("api/v{version:apiVersion}/countries")]
     [ApiController]
+    [ApiVersion("2")]
     public class CountriesController : ControllerBase
     {
         //TODO: setup to use auto-mapper data 1
@@ -36,7 +38,7 @@ namespace HotelListingAPI.Controllers
 
         // GET: api/Countries
         [HttpGet]
-        [Authorize(Roles = "Administrator")]
+        // [Authorize(Roles = "Administrator")]
         public async Task<ActionResult<IEnumerable<GetCountryDto>>> GetCountries()
         {
             var countries = await _countriesRepository.GetAllAsync();

@@ -7,6 +7,8 @@ using HotelListingAPI.Models.Contracts;
 using HotelListingAPI.Repositorys;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
 using Serilog;
@@ -57,6 +59,30 @@ builder
     .AddCors(options =>
     {
         options.AddPolicy("AllowAll", b => b.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
+    });
+
+//TODO: Add Mvc.Versioning from headers is(X-Version) or query(api-version)
+builder
+    .Services
+    .AddApiVersioning(options =>
+    {
+        options.AssumeDefaultVersionWhenUnspecified = true;
+        options.DefaultApiVersion = new ApiVersion(1, 0);
+        options.ReportApiVersions = true;
+        options.ApiVersionReader = ApiVersionReader.Combine(
+            new QueryStringApiVersionReader("api-version"),
+            new HeaderApiVersionReader("X-Version"),
+            new MediaTypeApiVersionReader("ver")
+        );
+    });
+
+//TODO: Add Mvc ApiExplorer
+builder
+    .Services
+    .AddVersionedApiExplorer(options =>
+    {
+        options.GroupNameFormat = "'v'VVV";
+        options.SubstituteApiVersionInUrl = true;
     });
 
 //TODO: Add Serilog1

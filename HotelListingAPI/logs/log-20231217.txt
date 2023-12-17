@@ -171,3 +171,74 @@ System.ArgumentNullException: Value cannot be null. (Parameter 'user')
 2023-12-17 22:42:54.479 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 82.3540 ms
 2023-12-17 22:43:05.576 +07:00 [WRN] CreateRefreshToken -> False
 2023-12-17 22:43:05.576 +07:00 [INF] HTTP POST /api/Account/refresh-token responded 401 in 1.0679 ms
+2023-12-17 22:48:20.327 +07:00 [INF] Application is shutting down...
+2023-12-17 23:03:55.643 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-17 23:03:55.675 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-17 23:03:55.675 +07:00 [INF] Hosting environment: Development
+2023-12-17 23:03:55.675 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-17 23:04:38.075 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-12-17 23:04:38.145 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 70.4474 ms
+2023-12-17 23:04:44.798 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 1.5583 ms
+2023-12-17 23:04:50.590 +07:00 [INF] HTTP GET /WeatherForecast responded 200 in 25.6243 ms
+2023-12-17 23:05:39.115 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 0.4435 ms
+2023-12-17 23:05:52.837 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 1.3133 ms
+2023-12-17 23:05:56.741 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 0.1921 ms
+2023-12-17 23:06:03.689 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 0.3646 ms
+2023-12-17 23:08:35.479 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 0.2425 ms
+2023-12-17 23:10:24.588 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 1.1419 ms
+2023-12-17 23:10:28.168 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 0.1550 ms
+2023-12-17 23:10:32.355 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 0.1909 ms
+2023-12-17 23:10:33.465 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 0.2325 ms
+2023-12-17 23:10:39.149 +07:00 [INF] HTTP GET /WeatherForecast responded 200 in 3.4192 ms
+2023-12-17 23:10:44.708 +07:00 [INF] HTTP GET /WeatherForecast responded 200 in 0.4273 ms
+2023-12-17 23:10:47.411 +07:00 [INF] HTTP GET /WeatherForecast responded 200 in 0.4150 ms
+2023-12-17 23:10:48.018 +07:00 [INF] HTTP GET /WeatherForecast responded 200 in 0.3707 ms
+2023-12-17 23:10:58.930 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 7.8721 ms
+2023-12-17 23:11:01.174 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 0.2461 ms
+2023-12-17 23:11:02.087 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 0.2188 ms
+2023-12-17 23:11:25.025 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-17 23:11:25.070 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-17 23:11:25.071 +07:00 [INF] Hosting environment: Development
+2023-12-17 23:11:25.071 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-17 23:11:30.040 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-12-17 23:11:30.115 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 74.4476 ms
+2023-12-17 23:11:47.592 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 2.7306 ms
+2023-12-17 23:12:20.872 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 2.7083 ms
+2023-12-17 23:12:46.221 +07:00 [INF] HTTP GET /WeatherForecast responded 400 in 0.2702 ms
+2023-12-17 23:13:22.566 +07:00 [INF] HTTP GET /WeatherForecast responded 200 in 13.3761 ms
+2023-12-17 23:18:31.416 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-17 23:18:31.452 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-17 23:18:31.453 +07:00 [INF] Hosting environment: Development
+2023-12-17 23:18:31.453 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-17 23:18:31.790 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Countries" for actions - HotelListingAPI.v2.Controllers.CountriesController.GetCountries (HotelListingAPI),HotelListingAPI.Controllers.CountriesController.GetCountries (HotelListingAPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-17 23:18:58.643 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-17 23:18:58.683 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-17 23:18:58.684 +07:00 [INF] Hosting environment: Development
+2023-12-17 23:18:58.684 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-17 23:18:59.017 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Countries" for actions - HotelListingAPI.Controllers.CountriesController.GetCountries (HotelListingAPI),HotelListingAPI.Controllers.v2.CountriesController.GetCountries (HotelListingAPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-17 23:19:10.756 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-17 23:19:10.793 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-17 23:19:10.794 +07:00 [INF] Hosting environment: Development
+2023-12-17 23:19:10.794 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-17 23:19:11.237 +07:00 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/path combination "GET api/Countries" for actions - HotelListingAPI.Controllers.CountriesController.GetCountries (HotelListingAPI),HotelListingAPI.Controllers.v2.CountriesController.GetCountries (HotelListingAPI). Actions require a unique method/path combination for Swagger/OpenAPI 3.0. Use ConflictingActionsResolver as a workaround
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)

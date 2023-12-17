@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 
-namespace HotelListingAPI.Controllers
+namespace HotelListingAPI.Controllers.v1
 {
     [ApiController]
     [Route("api/[controller]")]
