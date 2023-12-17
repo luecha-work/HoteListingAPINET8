@@ -100,6 +100,7 @@ app.UseHttpsRedirection();
 //TODO: Add cors url2
 app.UseCors();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();

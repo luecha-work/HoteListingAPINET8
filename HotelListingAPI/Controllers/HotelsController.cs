@@ -6,6 +6,7 @@ using AutoMapper;
 using HotelListingAPI.Dtos.Hotels;
 using HotelListingAPI.Entitys;
 using HotelListingAPI.Models.Contracts;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -14,6 +15,7 @@ namespace HotelListingAPI.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
+    [Authorize]
     public class HotelsController : ControllerBase
     {
         private readonly IHotelRepository _hotelRepository;
