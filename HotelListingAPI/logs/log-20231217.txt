@@ -242,3 +242,19 @@ Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/
    at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
    at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
    at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2023-12-17 23:20:35.305 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-17 23:20:35.338 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-17 23:20:35.339 +07:00 [INF] Hosting environment: Development
+2023-12-17 23:20:35.339 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-17 23:23:24.739 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-12-17 23:23:24.834 +07:00 [INF] HTTP GET /api/v1/countries responded 401 in 97.5901 ms
+2023-12-17 23:27:16.014 +07:00 [INF] HTTP GET /api/v2/countries responded 401 in 10.9184 ms
+2023-12-17 23:27:19.578 +07:00 [INF] HTTP GET /api/v2/countries responded 401 in 1.5392 ms
+2023-12-17 23:27:49.333 +07:00 [INF] Loging Attempt for user@example.com
+2023-12-17 23:27:49.334 +07:00 [WRN] Looking for user with email user@example.com
+2023-12-17 23:27:52.383 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiMjYwNjRlNTQtZDUzMC00YzUwLWE2ZTgtMDIwODYxYzlkMDhlIiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiNDVmYWI5MzMtOTcwYi00MWJkLThjMjUtOTkyOWE5MWY5NDNjIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTcwMjgzMTA3MiwiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.NAEri4NUPplIJ49wKi9ZNLy1p4h3px_30c-Pqzu_C-8
+2023-12-17 23:27:52.384 +07:00 [WRN] CreateRefreshToken -> True
+2023-12-17 23:27:52.548 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 3378.7599 ms
+2023-12-17 23:28:24.226 +07:00 [INF] HTTP GET /api/v2.0/countries responded 200 in 64.4299 ms
+2023-12-17 23:28:32.622 +07:00 [INF] HTTP GET /api/v2/countries responded 200 in 14.3465 ms
+2023-12-17 23:28:47.494 +07:00 [INF] HTTP GET /api/v2/countries responded 200 in 15.0072 ms
