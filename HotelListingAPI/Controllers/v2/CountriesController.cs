@@ -16,7 +16,7 @@ namespace HotelListingAPI.Controllers.v2
 {
     [Route("api/v{version:apiVersion}/countries")]
     [ApiController]
-    [ApiVersion("2")]
+    [ApiVersion("2.0")]
     public class CountriesController : ControllerBase
     {
         //TODO: setup to use auto-mapper data 1
