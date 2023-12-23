@@ -194,3 +194,19 @@ Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/
 2023-12-23 19:12:03.410 +07:00 [INF] Application started. Press Ctrl+C to shut down.
 2023-12-23 19:12:03.413 +07:00 [INF] Hosting environment: Development
 2023-12-23 19:12:03.413 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-23 19:17:34.465 +07:00 [INF] Application is shutting down...
+2023-12-23 19:22:01.436 +07:00 [WRN] The ASP.NET Core developer certificate is not trusted. For information about trusting the ASP.NET Core developer certificate, see https://aka.ms/aspnet/https-trust-dev-cert.
+2023-12-23 19:22:01.779 +07:00 [INF] Now listening on: https://localhost:7199
+2023-12-23 19:22:01.783 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-23 19:22:01.789 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-23 19:22:01.791 +07:00 [INF] Hosting environment: Development
+2023-12-23 19:22:01.792 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-23 19:55:55.710 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-23 19:55:55.766 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-23 19:55:55.767 +07:00 [INF] Hosting environment: Development
+2023-12-23 19:55:55.767 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-23 19:56:19.059 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-12-23 19:56:22.824 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-12-23 19:56:22.825 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-12-23 19:56:22.913 +07:00 [INF] HTTP GET /api/v1.0/countries responded 200 in 3855.0916 ms
+2023-12-23 19:56:43.615 +07:00 [INF] HTTP GET /api/Hotels responded 401 in 13.2675 ms
