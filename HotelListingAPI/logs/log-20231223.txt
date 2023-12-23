@@ -178,3 +178,15 @@ Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Conflicting method/
 2023-12-23 18:28:29.112 +07:00 [INF] Application started. Press Ctrl+C to shut down.
 2023-12-23 18:28:29.114 +07:00 [INF] Hosting environment: Development
 2023-12-23 18:28:29.117 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-23 19:10:50.057 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-23 19:10:50.118 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-23 19:10:50.119 +07:00 [INF] Hosting environment: Development
+2023-12-23 19:10:50.119 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2023-12-23 19:10:58.181 +07:00 [WRN] Failed to determine the https port for redirect.
+2023-12-23 19:11:02.985 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-12-23 19:11:02.986 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2023-12-23 19:11:03.077 +07:00 [INF] HTTP GET /api/v1.0/countries responded 200 in 4898.7289 ms
+2023-12-23 19:11:36.059 +07:00 [INF] Now listening on: http://localhost:5233
+2023-12-23 19:11:36.108 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2023-12-23 19:11:36.109 +07:00 [INF] Hosting environment: Development
+2023-12-23 19:11:36.109 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI

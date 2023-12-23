@@ -2,15 +2,15 @@ using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Text;
 using AutoMapper;
-using HotelListingAPI.Dtos.Users;
+using HotelListingAPI.Core.Dtos.Users;
+using HotelListingAPI.Core.Models.Contracts;
 using HotelListingAPI.Entitys;
-using HotelListingAPI.Models.Contracts;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 using Microsoft.IdentityModel.Tokens;
 
-namespace HotelListingAPI.Repositorys
+namespace HotelListingAPI.Core.Repositorys
 {
     public class AuthManager : IAuthManager
     {

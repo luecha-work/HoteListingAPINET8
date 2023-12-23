@@ -2,9 +2,9 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using HotelListingAPI.Models.Query;
+using HotelListingAPI.Core.Models.Query;
 
-namespace HotelListingAPI.Models.Contracts
+namespace HotelListingAPI.Core.Models.Contracts
 {
     public interface IGenericRepository<T>
         where T : class

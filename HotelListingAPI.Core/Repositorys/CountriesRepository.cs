@@ -1,9 +1,9 @@
 using AutoMapper;
+using HotelListingAPI.Core.Models.Contracts;
 using HotelListingAPI.Entitys;
-using HotelListingAPI.Models.Contracts;
 using Microsoft.EntityFrameworkCore;
 
-namespace HotelListingAPI.Repositorys
+namespace HotelListingAPI.Core.Repositorys
 {
     public class CountriesRepository : GenericRepository<Country>, ICountriesRepository
     {

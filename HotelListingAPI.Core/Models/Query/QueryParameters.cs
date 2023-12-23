@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace HotelListingAPI.Models.Query
+namespace HotelListingAPI.Core.Models.Query
 {
     public class QueryParameters
     {

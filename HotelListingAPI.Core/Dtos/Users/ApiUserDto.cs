@@ -1,10 +1,6 @@
-using System;
-using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
-using System.Threading.Tasks;
 
-namespace HotelListingAPI.Dtos.Users
+namespace HotelListingAPI.Core.Dtos.Users
 {
     public class ApiUserDto : LoginDto
     {

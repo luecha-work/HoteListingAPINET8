@@ -1,12 +1,7 @@
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.Metrics;
-using System.Linq;
-using System.Threading.Tasks;
 using AutoMapper;
-using HotelListingAPI.Dtos.Country;
-using HotelListingAPI.Dtos.Hotels;
-using HotelListingAPI.Dtos.Users;
+using HotelListingAPI.Core.Dtos.Country;
+using HotelListingAPI.Core.Dtos.Hotels;
+using HotelListingAPI.Core.Dtos.Users;
 using HotelListingAPI.Entitys;
 
 //TODO: Add Maper Data 2

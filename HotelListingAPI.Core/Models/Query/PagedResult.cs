@@ -1,4 +1,4 @@
-namespace HotelListingAPI.Models.Query
+namespace HotelListingAPI.Core.Models.Query
 {
     public class PagedResult<T>
     {

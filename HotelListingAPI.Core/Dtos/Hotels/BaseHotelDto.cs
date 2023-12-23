@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace HotelListingAPI.Dtos.Hotels
+namespace HotelListingAPI.Core.Dtos.Hotels
 {
     public abstract class BaseHotelDto
     {

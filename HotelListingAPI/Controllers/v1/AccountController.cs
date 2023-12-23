@@ -2,8 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using HotelListingAPI.Dtos.Users;
-using HotelListingAPI.Models.Contracts;
+using HotelListingAPI.Core.Dtos.Users;
+using HotelListingAPI.Core.Models.Contracts;
 using Microsoft.AspNetCore.Mvc;
 
 namespace HotelListingAPI.Controllers.v1

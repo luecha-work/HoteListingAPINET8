@@ -1,4 +1,4 @@
-namespace HotelListingAPI.Dtos.Hotels
+namespace HotelListingAPI.Core.Dtos.Hotels
 {
     public class UpdateHotelDto : BaseHotelDto { }
 }
