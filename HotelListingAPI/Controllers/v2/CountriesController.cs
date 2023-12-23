@@ -10,6 +10,7 @@ using HotelListingAPI.Models.Contracts;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
 using Microsoft.EntityFrameworkCore;
 
 namespace HotelListingAPI.Controllers.v2
@@ -38,6 +39,7 @@ namespace HotelListingAPI.Controllers.v2
 
         // GET: api/Countries
         [HttpGet]
+        [EnableQuery]
         // [Authorize(Roles = "Administrator")]
         public async Task<ActionResult<IEnumerable<GetCountryDto>>> GetCountries()
         {

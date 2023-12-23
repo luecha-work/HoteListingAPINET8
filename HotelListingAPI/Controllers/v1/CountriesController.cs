@@ -6,16 +6,18 @@ using AutoMapper;
 using HotelListingAPI.Dtos.Country;
 using HotelListingAPI.Entitys;
 using HotelListingAPI.Models.Contracts;
+using HotelListingAPI.Models.Query;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.OData.Query;
 using Microsoft.EntityFrameworkCore;
 
 namespace HotelListingAPI.Controllers.v1
 {
     [Route("api/v{version:apiVersion}/countries")]
     [ApiController]
-    [ApiVersion("1.0")]
+    [ApiVersion("1.0", Deprecated = true)]
     public class CountriesController : ControllerBase
     {
         //TODO: setup to use auto-mapper data 1
@@ -36,9 +38,9 @@ namespace HotelListingAPI.Controllers.v1
         }
 
         // GET: api/Countries
-        [HttpGet]
+        [HttpGet("get-all")]
         // [Authorize(Roles = "Administrator")]
-        public async Task<ActionResult<IEnumerable<GetCountryDto>>> GetCountries()
+        public async Task<ActionResult<IEnumerable<GetCountryDto>>> GetPagedCountries()
         {
             var countries = await _countriesRepository.GetAllAsync();
 
@@ -46,6 +48,18 @@ namespace HotelListingAPI.Controllers.v1
             var records = this._mapper.Map<List<GetCountryDto>>(countries);
 
             return Ok(records);
+        }
+
+        [HttpGet]
+        // [Authorize(Roles = "Administrator")]
+        public async Task<ActionResult<PagedResult<GetCountryDto>>> GetCountries(
+            [FromQuery] QueryParameters queryParameters
+        )
+        {
+            var pagedCountriesResult =
+                await this._countriesRepository.GetPagedResultAsync<GetCountryDto>(queryParameters);
+
+            return Ok(pagedCountriesResult);
         }
 
         // GET: api/Countries/5

@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using AutoMapper;
 using HotelListingAPI.Entitys;
 using HotelListingAPI.Models.Contracts;
 using Microsoft.EntityFrameworkCore;
@@ -12,8 +13,8 @@ namespace HotelListingAPI.Repositorys
     {
         private readonly HotelListingDbContext _context;
 
-        public CountriesRepository(HotelListingDbContext context)
-            : base(context)
+        public CountriesRepository(HotelListingDbContext context, IMapper mapper)
+            : base(context, mapper)
         {
             this._context = context;
         }

@@ -66,6 +66,7 @@ namespace HotelListingAPI.Repositorys
         )
         {
             var totalSize = await this._context.Set<T>().CountAsync();
+
             var item = await this._context
                 .Set<T>()
                 .Skip(queryParameters.StartIndex)
@@ -76,7 +77,7 @@ namespace HotelListingAPI.Repositorys
             return new PagedResult<TResult>
             {
                 Item = item,
-                PageNumber = queryParameters.StartIndex,
+                PageNumber = queryParameters.PageNumber,
                 RecordNumber = queryParameters.PageSize,
                 TotalCount = totalSize
             };
