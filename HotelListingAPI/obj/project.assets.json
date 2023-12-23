@@ -3485,6 +3485,38 @@
             "rid": "win"
           }
         }
+      },
+      "HotelListingAPI.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "HotelListingAPI.Entitys": "1.0.0",
+          "Microsoft.AspNetCore.Authentication.JwtBearer": "8.0.0",
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.0",
+          "Newtonsoft.Json": "13.0.3"
+        },
+        "compile": {
+          "bin/placeholder/HotelListingAPI.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HotelListingAPI.Core.dll": {}
+        }
+      },
+      "HotelListingAPI.Entitys/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore.SqlServer": "8.0.0"
+        },
+        "compile": {
+          "bin/placeholder/HotelListingAPI.Entitys.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/HotelListingAPI.Entitys.dll": {}
+        }
       }
     }
   },
@@ -9542,20 +9574,29 @@
         "system.windows.extensions.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "HotelListingAPI.Core/1.0.0": {
+      "type": "project",
+      "path": "../HotelListingAPI.Core/HotelListingAPI.Core.csproj",
+      "msbuildProject": "../HotelListingAPI.Core/HotelListingAPI.Core.csproj"
+    },
+    "HotelListingAPI.Entitys/1.0.0": {
+      "type": "project",
+      "path": "../HotelListingAPI.Entitys/HotelListingAPI.Entitys.csproj",
+      "msbuildProject": "../HotelListingAPI.Entitys/HotelListingAPI.Entitys.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
+      "HotelListingAPI.Core >= 1.0.0",
+      "HotelListingAPI.Entitys >= 1.0.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 8.0.0",
       "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter >= 8.0.0",
-      "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 8.0.0",
       "Microsoft.AspNetCore.Mvc.Versioning >= 5.1.0",
       "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer >= 5.1.0",
       "Microsoft.AspNetCore.OData >= 8.2.3",
       "Microsoft.AspNetCore.OpenApi >= 8.0.0",
       "Microsoft.EntityFrameworkCore >= 8.0.0",
-      "Microsoft.EntityFrameworkCore.SqlServer >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.0",
       "Serilog.AspNetCore >= 8.0.0",
@@ -9595,7 +9636,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Core\\HotelListingAPI.Core.csproj": {
+              "projectPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Core\\HotelListingAPI.Core.csproj"
+            },
+            "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj": {
+              "projectPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -9608,19 +9656,11 @@
       "net8.0": {
         "targetAlias": "net8.0",
         "dependencies": {
-          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
-            "target": "Package",
-            "version": "[12.0.1, )"
-          },
           "Microsoft.AspNetCore.Authentication.JwtBearer": {
             "target": "Package",
             "version": "[8.0.0, )"
           },
           "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": {
-            "target": "Package",
-            "version": "[8.0.0, )"
-          },
-          "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",
             "version": "[8.0.0, )"
           },
@@ -9641,10 +9681,6 @@
             "version": "[8.0.0, )"
           },
           "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[8.0.0, )"
-          },
-          "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[8.0.0, )"
           },
