@@ -74,7 +74,7 @@ namespace HotelListingAPI.Core.Repositorys
 
             if (result.Succeeded)
             {
-                await this._userManager.AddToRoleAsync(_user, "User");
+                await this._userManager.AddToRoleAsync(_user, "Administrator");
             }
 
             return result.Errors;
@@ -106,11 +106,9 @@ namespace HotelListingAPI.Core.Repositorys
                 issuer: this._configuration["JwtSettings:Issuer"],
                 audience: this._configuration["JwtSettings:Audience"],
                 claims: claims,
-                expires: DateTime
-                    .Now
-                    .AddMinutes(
-                        Convert.ToInt32(this._configuration["JwtSettings:DurationInMinutes"])
-                    ),
+                expires: DateTime.Now.AddMinutes(
+                    Convert.ToInt32(this._configuration["JwtSettings:DurationInMinutes"])
+                ),
                 signingCredentials: credentials
             );
 
@@ -161,8 +159,7 @@ namespace HotelListingAPI.Core.Repositorys
             var tokenContent = jwtSecurityTokenHandler.ReadJwtToken(request.Token);
 
             var username = tokenContent
-                .Claims
-                .ToList()
+                .Claims.ToList()
                 .FirstOrDefault(q => q.Type == JwtRegisteredClaimNames.Email)
                 ?.Value;
 

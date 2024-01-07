@@ -2521,6 +2521,41 @@
           }
         }
       },
+      "Npgsql/8.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Npgsql.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Npgsql.EntityFrameworkCore.PostgreSQL/8.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "8.0.0",
+          "Microsoft.EntityFrameworkCore.Abstractions": "8.0.0",
+          "Microsoft.EntityFrameworkCore.Relational": "8.0.0",
+          "Npgsql": "8.0.0"
+        },
+        "compile": {
+          "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "NuGet.Common/6.3.1": {
         "type": "package",
         "dependencies": {
@@ -3616,7 +3651,9 @@
           "Microsoft.Extensions.Configuration": "8.0.0",
           "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "8.0.0",
-          "Microsoft.Extensions.Configuration.Json": "8.0.0"
+          "Microsoft.Extensions.Configuration.Json": "8.0.0",
+          "Npgsql": "8.0.1",
+          "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.0"
         },
         "compile": {
           "bin/placeholder/HotelListingAPI.Entitys.dll": {}
@@ -8063,6 +8100,44 @@
         "packageIcon.png"
       ]
     },
+    "Npgsql/8.0.1": {
+      "sha512": "/XQX6n2gKQPnRoP5AhOnz33qL5V6CEY2vqluHPIvK4VZqY/sE/dHOFj+/8Ok7Y5Cbkj6/OZOFLZCiaKcryhS9A==",
+      "type": "package",
+      "path": "npgsql/8.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net6.0/Npgsql.dll",
+        "lib/net6.0/Npgsql.xml",
+        "lib/net7.0/Npgsql.dll",
+        "lib/net7.0/Npgsql.xml",
+        "lib/net8.0/Npgsql.dll",
+        "lib/net8.0/Npgsql.xml",
+        "lib/netstandard2.0/Npgsql.dll",
+        "lib/netstandard2.0/Npgsql.xml",
+        "lib/netstandard2.1/Npgsql.dll",
+        "lib/netstandard2.1/Npgsql.xml",
+        "npgsql.8.0.1.nupkg.sha512",
+        "npgsql.nuspec",
+        "postgresql.png"
+      ]
+    },
+    "Npgsql.EntityFrameworkCore.PostgreSQL/8.0.0": {
+      "sha512": "GDXiMS9peEdjSCU/rfgyHruio7q6tYuywGaktqEi6UPQ6ILechp3fVVX+dHXkIXt4nklCBzYVWkzFrSL9ubKUA==",
+      "type": "package",
+      "path": "npgsql.entityframeworkcore.postgresql/8.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.dll",
+        "lib/net8.0/Npgsql.EntityFrameworkCore.PostgreSQL.xml",
+        "npgsql.entityframeworkcore.postgresql.8.0.0.nupkg.sha512",
+        "npgsql.entityframeworkcore.postgresql.nuspec",
+        "postgresql.png"
+      ]
+    },
     "NuGet.Common/6.3.1": {
       "sha512": "/WgxNyc9dXl+ZrQJDf5BXaqtMbl0CcDC5GEQITecbHZBQHApTMuxeTMMEqa0Y+PD1CIxTtbRY4jmotKS5dsLuA==",
       "type": "package",
@@ -9856,6 +9931,8 @@
       "Microsoft.AspNetCore.OpenApi >= 8.0.0",
       "Microsoft.EntityFrameworkCore.Tools >= 8.0.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 8.0.0",
+      "Npgsql >= 8.0.1",
+      "Npgsql.EntityFrameworkCore.PostgreSQL >= 8.0.0",
       "Serilog.AspNetCore >= 8.0.0",
       "Serilog.Expressions >= 4.0.0",
       "Serilog.Sinks.Seq >= 6.0.0",
@@ -9863,24 +9940,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luecha.kan\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\Luecha\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI\\HotelListingAPI.csproj",
+      "projectUniqueName": "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI\\HotelListingAPI.csproj",
       "projectName": "HotelListingAPI",
-      "projectPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI\\HotelListingAPI.csproj",
-      "packagesPath": "C:\\Users\\luecha.kan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI\\obj\\",
+      "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI\\HotelListingAPI.csproj",
+      "packagesPath": "C:\\Users\\Luecha\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\luecha.kan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\Luecha\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -9888,17 +9960,17 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Core\\HotelListingAPI.Core.csproj": {
-              "projectPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Core\\HotelListingAPI.Core.csproj"
+            "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Core\\HotelListingAPI.Core.csproj": {
+              "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Core\\HotelListingAPI.Core.csproj"
             },
-            "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj": {
-              "projectPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj"
+            "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj": {
+              "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj"
             }
           }
         }
@@ -9940,6 +10012,14 @@
             "version": "[8.0.0, )"
           },
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+            "target": "Package",
+            "version": "[8.0.0, )"
+          },
+          "Npgsql": {
+            "target": "Package",
+            "version": "[8.0.1, )"
+          },
+          "Npgsql.EntityFrameworkCore.PostgreSQL": {
             "target": "Package",
             "version": "[8.0.0, )"
           },

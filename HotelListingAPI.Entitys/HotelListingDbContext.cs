@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
+using Npgsql.EntityFrameworkCore.PostgreSQL;
 
 namespace HotelListingAPI.Entitys
 {
@@ -35,7 +36,8 @@ namespace HotelListingAPI.Entitys
 
             var optionsBuilder = new DbContextOptionsBuilder<HotelListingDbContext>();
             var conn = config.GetConnectionString("HotelListingDbConnectionString");
-            optionsBuilder.UseSqlServer(conn);
+            // optionsBuilder.UseSqlServer(conn);
+            optionsBuilder.UseNpgsql(conn);
             return new HotelListingDbContext(optionsBuilder.Options);
         }
     }

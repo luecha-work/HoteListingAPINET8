@@ -34,7 +34,7 @@ namespace HotelListingAPI.Controllers.v2
         // GET: api/Countries
         [HttpGet]
         [EnableQuery]
-        // [Authorize(Roles = "Administrator")]
+        [Authorize(Roles = "Administrator")]
         public async Task<ActionResult<IEnumerable<GetCountryDto>>> GetCountries()
         {
             var countries = await _countriesRepository.GetAllAsync();

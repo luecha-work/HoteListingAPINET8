@@ -1,24 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj": {}
+    "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj": {}
   },
   "projects": {
-    "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj": {
+    "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj",
+        "projectUniqueName": "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj",
         "projectName": "HotelListingAPI.Entitys",
-        "projectPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj",
-        "packagesPath": "C:\\Users\\luecha.kan\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\obj\\",
+        "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj",
+        "packagesPath": "C:\\Users\\Luecha\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Entitys\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-        ],
         "configFilePaths": [
-          "C:\\Users\\luecha.kan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Users\\Luecha\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -26,7 +22,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "https://www.nuget.org/api/v2/": {}
+          "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
@@ -48,6 +44,12 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
             "Microsoft.EntityFrameworkCore.SqlServer": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -65,6 +67,14 @@
               "version": "[8.0.0, )"
             },
             "Microsoft.Extensions.Configuration.Json": {
+              "target": "Package",
+              "version": "[8.0.0, )"
+            },
+            "Npgsql": {
+              "target": "Package",
+              "version": "[8.0.1, )"
+            },
+            "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
               "version": "[8.0.0, )"
             }
