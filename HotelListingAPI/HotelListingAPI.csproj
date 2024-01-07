@@ -6,11 +6,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+      <PackageReference Include="AspNetCore.HealthChecks.Npgsql" Version="8.0.0" />
       <PackageReference Include="Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter" Version="8.0.0" />
       <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" Version="5.1.0" />
       <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" Version="5.1.0" />
       <PackageReference Include="Microsoft.AspNetCore.OData" Version="8.2.3" />
       <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="8.0.0" />
+      <PackageReference Include="Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore" Version="8.0.0" />
       <PackageReference Include="Npgsql" Version="8.0.1" />
       <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="8.0.0" />
       <PackageReference Include="Swashbuckle.AspNetCore" Version="6.5.0" />

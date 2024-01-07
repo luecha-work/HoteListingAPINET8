@@ -553,3 +553,13 @@ System.ArgumentException: IDX12729: Unable to decode the header '[PII of type 'S
 2024-01-07 23:26:42.016 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
 2024-01-07 23:27:24.594 +07:00 [WRN] Failed to determine the https port for redirect.
 2024-01-07 23:27:24.665 +07:00 [INF] HTTP GET /api/v1.0/countries/get-all responded 401 in 73.1627 ms
+2024-01-07 23:31:31.500 +07:00 [INF] HTTP GET /heath responded 404 in 3.8365 ms
+2024-01-07 23:31:55.875 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 23:31:55.907 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 23:31:55.907 +07:00 [INF] Hosting environment: Development
+2024-01-07 23:31:55.907 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 23:31:59.682 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-07 23:31:59.789 +07:00 [INF] HTTP GET /heath responded 404 in 108.6632 ms
+2024-01-07 23:32:04.823 +07:00 [INF] HTTP GET /healthcheck responded 200 in 8.4026 ms
+2024-01-07 23:32:04.881 +07:00 [INF] HTTP GET /favicon.ico responded 404 in 3.0875 ms
+2024-01-07 23:59:47.974 +07:00 [INF] Application is shutting down...

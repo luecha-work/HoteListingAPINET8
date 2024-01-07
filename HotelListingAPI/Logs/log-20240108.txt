@@ -1,0 +1,103 @@
+2024-01-08 00:11:08.288 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-08 00:11:08.350 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-08 00:11:08.351 +07:00 [INF] Hosting environment: Development
+2024-01-08 00:11:08.351 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-08 00:11:19.696 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-08 00:11:19.791 +07:00 [INF] HTTP GET /healthcheck responded 200 in 98.0900 ms
+2024-01-08 00:11:34.741 +07:00 [INF] HTTP GET /health responded 200 in 688.2715 ms
+2024-01-08 00:11:40.811 +07:00 [INF] HTTP GET /healthcheck responded 200 in 1.9703 ms
+2024-01-08 00:31:46.097 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-08 00:31:46.130 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-08 00:31:46.131 +07:00 [INF] Hosting environment: Development
+2024-01-08 00:31:46.131 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-08 00:31:48.304 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-08 00:31:49.347 +07:00 [INF] HTTP GET /health responded 200 in 1046.0849 ms
+2024-01-08 00:31:56.079 +07:00 [INF] HTTP GET /healthcheck responded 200 in 4.8833 ms
+2024-01-08 00:34:34.812 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-08 00:34:34.846 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-08 00:34:34.847 +07:00 [INF] Hosting environment: Development
+2024-01-08 00:34:34.847 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-08 00:36:41.931 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-08 00:36:42.011 +07:00 [INF] HTTP GET /healthcheck responded 200 in 81.7656 ms
+2024-01-08 00:36:42.874 +07:00 [INF] HTTP GET /healthcheck responded 200 in 3.0956 ms
+2024-01-08 00:39:39.271 +07:00 [INF] Application is shutting down...
+2024-01-08 00:40:04.080 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-08 00:40:04.146 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-08 00:40:04.147 +07:00 [INF] Hosting environment: Development
+2024-01-08 00:40:04.147 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-08 00:41:08.709 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-08 00:41:08.805 +07:00 [INF] HTTP GET /healthcheck responded 200 in 97.3609 ms
+2024-01-08 00:41:09.514 +07:00 [INF] HTTP GET /healthcheck responded 200 in 2.3309 ms
+2024-01-08 00:41:09.691 +07:00 [INF] HTTP GET /healthcheck responded 200 in 2.5262 ms
+2024-01-08 00:41:10.174 +07:00 [INF] HTTP GET /healthcheck responded 200 in 0.4364 ms
+2024-01-08 00:41:10.338 +07:00 [INF] HTTP GET /healthcheck responded 200 in 0.6047 ms
+2024-01-08 00:44:18.795 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-08 00:44:18.845 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-08 00:44:18.846 +07:00 [INF] Hosting environment: Development
+2024-01-08 00:44:18.847 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-08 00:45:53.608 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-08 00:45:53.836 +07:00 [INF] HTTP GET /healthcheck responded 200 in 230.7002 ms
+2024-01-08 00:45:55.916 +07:00 [INF] HTTP GET /healthcheck responded 200 in 4.3495 ms
+2024-01-08 00:46:05.938 +07:00 [INF] HTTP GET /databasehealthcheck responded 200 in 1225.5509 ms
+2024-01-08 00:46:51.439 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-08 00:46:51.496 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-08 00:46:51.497 +07:00 [INF] Hosting environment: Development
+2024-01-08 00:46:51.497 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-08 00:46:55.772 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-08 00:47:00.047 +07:00 [ERR] Health check npgsql with status "Unhealthy" completed after 4166.7394ms with message 'Failed to connect to 127.0.0.1:54321'
+Npgsql.NpgsqlException (0x80004005): Failed to connect to 127.0.0.1:54321
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at HealthChecks.NpgSql.NpgSqlHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.NpgSql/NpgSqlHealthCheck.cs:line 31
+   at HealthChecks.NpgSql.NpgSqlHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.NpgSql/NpgSqlHealthCheck.cs:line 37
+2024-01-08 00:47:01.293 +07:00 [ERR] Health check HotelListingDbContext with status "Unhealthy" completed after 5241.2705ms with message 'null'
+2024-01-08 00:47:01.315 +07:00 [ERR] HTTP GET /databasehealthcheck responded 503 in 5546.1444 ms
+2024-01-08 00:48:00.574 +07:00 [INF] HTTP GET /healthcheck responded 200 in 6.1940 ms
+2024-01-08 00:49:40.087 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-08 00:49:40.137 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-08 00:49:40.138 +07:00 [INF] Hosting environment: Development
+2024-01-08 00:49:40.138 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-08 00:50:25.389 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-08 00:50:25.535 +07:00 [INF] HTTP GET /healthcheck responded 200 in 149.5958 ms
+2024-01-08 00:50:51.712 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-08 00:50:51.749 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-08 00:50:51.750 +07:00 [INF] Hosting environment: Development
+2024-01-08 00:50:51.751 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-08 00:50:57.140 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-08 00:50:57.248 +07:00 [INF] HTTP GET /healthcheck responded 200 in 110.8802 ms
+2024-01-08 00:51:07.099 +07:00 [ERR] Health check npgsql with status "Unhealthy" completed after 4176.5146ms with message 'Failed to connect to 127.0.0.1:54321'
+Npgsql.NpgsqlException (0x80004005): Failed to connect to 127.0.0.1:54321
+ ---> System.Net.Sockets.SocketException (10061): No connection could be made because the target machine actively refused it.
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.ThrowException(SocketError error, CancellationToken cancellationToken)
+   at System.Net.Sockets.Socket.AwaitableSocketAsyncEventArgs.System.Threading.Tasks.Sources.IValueTaskSource.GetResult(Int16 token)
+   at System.Net.Sockets.Socket.<ConnectAsync>g__WaitForConnectWithCancellation|285_0(AwaitableSocketAsyncEventArgs saea, ValueTask connectTask, CancellationToken cancellationToken)
+   at Npgsql.TaskTimeoutAndCancellation.ExecuteAsync(Func`2 getTaskFunc, NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.ConnectAsync(NpgsqlTimeout timeout, CancellationToken cancellationToken)
+   at Npgsql.Internal.NpgsqlConnector.RawOpen(SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.<Open>g__OpenCore|213_1(NpgsqlConnector conn, SslMode sslMode, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken, Boolean isFirstAttempt)
+   at Npgsql.Internal.NpgsqlConnector.Open(NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.OpenNewConnector(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.PoolingDataSource.<Get>g__RentAsync|34_0(NpgsqlConnection conn, NpgsqlTimeout timeout, Boolean async, CancellationToken cancellationToken)
+   at Npgsql.NpgsqlConnection.<Open>g__OpenAsync|42_0(Boolean async, CancellationToken cancellationToken)
+   at HealthChecks.NpgSql.NpgSqlHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.NpgSql/NpgSqlHealthCheck.cs:line 31
+   at HealthChecks.NpgSql.NpgSqlHealthCheck.CheckHealthAsync(HealthCheckContext context, CancellationToken cancellationToken) in /_/src/HealthChecks.NpgSql/NpgSqlHealthCheck.cs:line 37
+2024-01-08 00:51:08.056 +07:00 [ERR] Health check HotelListingDbContext with status "Unhealthy" completed after 4999.3068ms with message 'null'
+2024-01-08 00:51:08.061 +07:00 [ERR] HTTP GET /healthz responded 503 in 5147.0988 ms
+2024-01-08 00:51:47.488 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-08 00:51:47.592 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-08 00:51:47.593 +07:00 [INF] Hosting environment: Development
+2024-01-08 00:51:47.593 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-08 00:51:50.833 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-08 00:51:52.174 +07:00 [INF] HTTP GET /healthz responded 200 in 1341.8388 ms

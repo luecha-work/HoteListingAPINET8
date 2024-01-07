@@ -574,3 +574,5 @@ C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\H
 C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\bin\Debug\net8.0\HotelListingAPI.Repositorys.pdb
 C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\bin\Debug\net8.0\HotelListingAPI.Controllers.dll
 C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\bin\Debug\net8.0\HotelListingAPI.Controllers.pdb
+C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\bin\Debug\net8.0\HealthChecks.NpgSql.dll
+C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\bin\Debug\net8.0\Microsoft.Extensions.Diagnostics.HealthChecks.EntityFrameworkCore.dll

@@ -1,21 +1,18 @@
 using System.Text;
+using System.Text.Json;
 using HotelListingAPI.Core.Configurations;
 using HotelListingAPI.Core.Middleware;
 using HotelListingAPI.Core.Models.Contracts;
 using HotelListingAPI.Documents;
 using HotelListingAPI.Entitys;
 using HotelListingAPI.Repositorys;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Builder;
+using Microsoft.AspNetCore.Diagnostics.HealthChecks;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Versioning;
 using Microsoft.AspNetCore.OData;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
-using Npgsql.EntityFrameworkCore.PostgreSQL;
+using Microsoft.Extensions.Diagnostics.HealthChecks;
 using Serilog;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -99,31 +96,6 @@ builder.Services.AddScoped<IAuthManager, AuthManager>();
 
 //TODO: Add Authen JWT
 builder.Services.AddJwtConfiguration(builder.Configuration);
-
-// builder
-//     .Services
-//     .AddAuthentication(options =>
-//     {
-//         options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme; // "Bearer"
-//         options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-//     })
-//     .AddJwtBearer(options =>
-//     {
-//         options.TokenValidationParameters = new TokenValidationParameters
-//         {
-//             ValidateIssuerSigningKey = true,
-//             ValidateIssuer = true,
-//             ValidateAudience = true,
-//             ValidateLifetime = true,
-//             ClockSkew = TimeSpan.Zero,
-//             ValidIssuer = builder.Configuration["JwtSettings:Issuer"], //TODO: Get JwtSettings Properties from applications.json
-//             ValidAudience = builder.Configuration["JwtSettings:Audience"],
-//             IssuerSigningKey = new SymmetricSecurityKey(
-//                 Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Key"])
-//             )
-//         };
-//     });
-
 builder
     .Services
     .Configure<SecurityStampValidatorOptions>(options =>
@@ -140,7 +112,17 @@ builder
         options.UseCaseSensitivePaths = true;
     });
 
-builder.Services.AddHealthChecks();
+//TODO: Add healthcheck 1
+builder
+    .Services
+    .AddHealthChecks()
+    .AddCheck<CustomHealthCheck>(
+        "Custom Health Check",
+        failureStatus: HealthStatus.Degraded,
+        tags: new[] { "custom" }
+    )
+    .AddNpgSql(connectionString, tags: new[] { "database" })
+    .AddDbContextCheck<HotelListingDbContext>(tags: new[] { "database" });
 
 //TODO: Add OData
 builder
@@ -159,7 +141,93 @@ if (app.Environment.IsDevelopment()) { }
 app.UseSwagger();
 app.UseSwaggerUI();
 
-app.MapHealthChecks("/healthz");
+// TODO: Add healthcheck2
+app.MapHealthChecks(
+    "/healthcheck",
+    new HealthCheckOptions
+    {
+        Predicate = healthcheck => healthcheck.Tags.Contains("custom"),
+        ResultStatusCodes =
+        {
+            [HealthStatus.Healthy] = StatusCodes.Status200OK,
+            [HealthStatus.Unhealthy] = StatusCodes.Status503ServiceUnavailable,
+            [HealthStatus.Degraded] = StatusCodes.Status200OK
+        },
+        ResponseWriter = WriteResponse
+    }
+);
+
+app.MapHealthChecks(
+    "/databasehealthcheck",
+    new HealthCheckOptions
+    {
+        Predicate = healthcheck => healthcheck.Tags.Contains("database"),
+        ResultStatusCodes =
+        {
+            [HealthStatus.Healthy] = StatusCodes.Status200OK,
+            [HealthStatus.Unhealthy] = StatusCodes.Status503ServiceUnavailable,
+            [HealthStatus.Degraded] = StatusCodes.Status200OK
+        },
+        ResponseWriter = WriteResponse
+    }
+);
+
+app.MapHealthChecks(
+    "/healthz",
+    new HealthCheckOptions
+    {
+        ResultStatusCodes =
+        {
+            [HealthStatus.Healthy] = StatusCodes.Status200OK,
+            [HealthStatus.Unhealthy] = StatusCodes.Status503ServiceUnavailable,
+            [HealthStatus.Degraded] = StatusCodes.Status200OK
+        },
+        ResponseWriter = WriteResponse
+    }
+);
+
+app.MapHealthChecks("/health");
+
+static Task WriteResponse(HttpContext context, HealthReport healthReport)
+{
+    context.Response.ContentType = "application/json; charset=UTF-8";
+
+    var options = new JsonWriterOptions { Indented = true };
+
+    using var memoryStream = new MemoryStream();
+    using (var jsonWriter = new Utf8JsonWriter(memoryStream, options))
+    {
+        jsonWriter.WriteStartObject();
+        jsonWriter.WriteString("status", healthReport.Status.ToString());
+        jsonWriter.WriteStartObject("results");
+
+        foreach (var healthReportEntry in healthReport.Entries)
+        {
+            jsonWriter.WriteStartObject(healthReportEntry.Key);
+            jsonWriter.WriteString("status", healthReportEntry.Value.Status.ToString());
+            jsonWriter.WriteString("description", healthReportEntry.Value.Description);
+            jsonWriter.WriteStartObject("data");
+
+            foreach (var item in healthReportEntry.Value.Data)
+            {
+                jsonWriter.WritePropertyName(item.Key);
+
+                JsonSerializer.Serialize(
+                    jsonWriter,
+                    item.Value,
+                    item.Value?.GetType() ?? typeof(object)
+                );
+            }
+
+            jsonWriter.WriteEndObject();
+            jsonWriter.WriteEndObject();
+        }
+        jsonWriter.WriteEndObject();
+        jsonWriter.WriteEndObject();
+    }
+
+    return context.Response.WriteAsync(Encoding.UTF8.GetString(memoryStream.ToArray()));
+}
 
 //TODO: Add Serilog2
 app.UseSerilogRequestLogging();
@@ -197,3 +265,25 @@ app.UseAuthorization();
 app.MapControllers();
 
 app.Run();
+
+class CustomHealthCheck : IHealthCheck
+{
+    public Task<HealthCheckResult> CheckHealthAsync(
+        HealthCheckContext context,
+        CancellationToken cancellationToken = default
+    )
+    {
+        var isHealthy = true;
+
+        /* custom check. Logic....etc.etc. */
+
+        if (isHealthy)
+        {
+            return Task.FromResult(HealthCheckResult.Healthy("All systems arte looking good"));
+        }
+
+        return Task.FromResult(
+            new HealthCheckResult(context.Registration.FailureStatus, "System Unhealthy")
+        );
+    }
+}
