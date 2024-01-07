@@ -4533,19 +4533,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Luecha\\.nuget\\packages\\": {}
+    "C:\\Users\\luecha.kan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj",
+      "projectUniqueName": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj",
       "projectName": "HotelListingAPI.Entitys",
-      "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj",
-      "packagesPath": "C:\\Users\\Luecha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Entitys\\obj\\",
+      "projectPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj",
+      "packagesPath": "C:\\Users\\luecha.kan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Luecha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\luecha.kan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -4553,7 +4558,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "net8.0": {

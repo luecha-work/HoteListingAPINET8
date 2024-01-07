@@ -199,6 +199,11 @@ namespace HotelListingAPI.Entitys.Migrations
                         .IsConcurrencyToken()
                         .HasColumnType("text");
 
+                    b.Property<string>("Discriminator")
+                        .IsRequired()
+                        .HasMaxLength(13)
+                        .HasColumnType("character varying(13)");
+
                     b.Property<string>("Name")
                         .HasMaxLength(256)
                         .HasColumnType("character varying(256)");
@@ -215,19 +220,9 @@ namespace HotelListingAPI.Entitys.Migrations
 
                     b.ToTable("AspNetRoles", (string)null);
 
-                    b.HasData(
-                        new
-                        {
-                            Id = "3bd3608a-aab2-40a5-9bd7-5364a76f06f3",
-                            Name = "Administrator",
-                            NormalizedName = "ADMINISTRATOR"
-                        },
-                        new
-                        {
-                            Id = "1f540e74-0987-4396-9b07-655ab6f89b76",
-                            Name = "User",
-                            NormalizedName = "USER"
-                        });
+                    b.HasDiscriminator<string>("Discriminator").HasValue("IdentityRole");
+
+                    b.UseTphMappingStrategy();
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
@@ -334,6 +329,55 @@ namespace HotelListingAPI.Entitys.Migrations
                     b.HasKey("UserId", "LoginProvider", "Name");
 
                     b.ToTable("AspNetUserTokens", (string)null);
+                });
+
+            modelBuilder.Entity("HotelListingAPI.Entitys.Roles", b =>
+                {
+                    b.HasBaseType("Microsoft.AspNetCore.Identity.IdentityRole");
+
+                    b.Property<DateTimeOffset>("Create_At")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Create_By")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<string>("RoleCode")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.Property<DateTimeOffset>("Update_At")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("Update_By")
+                        .IsRequired()
+                        .HasColumnType("text");
+
+                    b.HasDiscriminator().HasValue("Roles");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = "b6763a0f-0fd5-4a00-9e86-ea9a173bb170",
+                            Name = "Administrator",
+                            NormalizedName = "ADMINISTRATOR",
+                            Create_At = new DateTimeOffset(new DateTime(2024, 1, 7, 14, 16, 22, 629, DateTimeKind.Unspecified).AddTicks(8645), new TimeSpan(0, 7, 0, 0, 0)),
+                            Create_By = "Configure",
+                            RoleCode = "R01",
+                            Update_At = new DateTimeOffset(new DateTime(2024, 1, 7, 14, 16, 22, 629, DateTimeKind.Unspecified).AddTicks(8690), new TimeSpan(0, 7, 0, 0, 0)),
+                            Update_By = ""
+                        },
+                        new
+                        {
+                            Id = "f0cfe8a3-7ebb-4098-bafd-111b8d3593d4",
+                            Name = "User",
+                            NormalizedName = "USER",
+                            Create_At = new DateTimeOffset(new DateTime(2024, 1, 7, 14, 16, 22, 629, DateTimeKind.Unspecified).AddTicks(8697), new TimeSpan(0, 7, 0, 0, 0)),
+                            Create_By = "Configure",
+                            RoleCode = "R02",
+                            Update_At = new DateTimeOffset(new DateTime(2024, 1, 7, 14, 16, 22, 629, DateTimeKind.Unspecified).AddTicks(8698), new TimeSpan(0, 7, 0, 0, 0)),
+                            Update_By = ""
+                        });
                 });
 
             modelBuilder.Entity("HotelListingAPI.Entitys.Hotel", b =>

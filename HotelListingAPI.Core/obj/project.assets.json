@@ -8068,19 +8068,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Luecha\\.nuget\\packages\\": {}
+    "C:\\Users\\luecha.kan\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Core\\HotelListingAPI.Core.csproj",
+      "projectUniqueName": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Core\\HotelListingAPI.Core.csproj",
       "projectName": "HotelListingAPI.Core",
-      "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Core\\HotelListingAPI.Core.csproj",
-      "packagesPath": "C:\\Users\\Luecha\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Core\\obj\\",
+      "projectPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Core\\HotelListingAPI.Core.csproj",
+      "packagesPath": "C:\\Users\\luecha.kan\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Core\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Luecha\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\luecha.kan\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8088,14 +8093,14 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://api.nuget.org/v3/index.json": {}
+        "https://www.nuget.org/api/v2/": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj": {
-              "projectPath": "C:\\Users\\Luecha\\Documents\\Dev\\project_dotnet\\HoteListing.API.NET8\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj"
+            "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj": {
+              "projectPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj"
             }
           }
         }

@@ -106,9 +106,11 @@ namespace HotelListingAPI.Core.Repositorys
                 issuer: this._configuration["JwtSettings:Issuer"],
                 audience: this._configuration["JwtSettings:Audience"],
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(
-                    Convert.ToInt32(this._configuration["JwtSettings:DurationInMinutes"])
-                ),
+                expires: DateTime
+                    .Now
+                    .AddMinutes(
+                        Convert.ToInt32(this._configuration["JwtSettings:DurationInMinutes"])
+                    ),
                 signingCredentials: credentials
             );
 
@@ -117,7 +119,6 @@ namespace HotelListingAPI.Core.Repositorys
 
         public async Task<string> CreateRefreshToken()
         {
-            this._logger.LogWarning($"CreateRefreshToken -> {_user != null}");
             if (_user != null)
             {
                 await _userManager.RemoveAuthenticationTokenAsync(
@@ -131,7 +132,7 @@ namespace HotelListingAPI.Core.Repositorys
                     _loginProvider,
                     _refreshToken
                 );
-                Console.WriteLine("GenerateUserTokenAsynced.");
+
                 var result = await _userManager.SetAuthenticationTokenAsync(
                     _user,
                     _loginProvider,
@@ -139,8 +140,6 @@ namespace HotelListingAPI.Core.Repositorys
                     newRefreshToken
                 );
 
-                Console.WriteLine("to return");
-                Console.WriteLine($"newRefreshToken is {newRefreshToken}");
                 return newRefreshToken;
             }
             else
@@ -159,7 +158,8 @@ namespace HotelListingAPI.Core.Repositorys
             var tokenContent = jwtSecurityTokenHandler.ReadJwtToken(request.Token);
 
             var username = tokenContent
-                .Claims.ToList()
+                .Claims
+                .ToList()
                 .FirstOrDefault(q => q.Type == JwtRegisteredClaimNames.Email)
                 ?.Value;
 
@@ -170,12 +170,12 @@ namespace HotelListingAPI.Core.Repositorys
                 return null;
             }
 
-            if (this._user == null)
+            if (_user == null)
             {
                 return null;
             }
 
-            var isValidRefreshToken = await this._userManager.VerifyUserTokenAsync(
+            var isValidRefreshToken = await _userManager.VerifyUserTokenAsync(
                 _user,
                 _loginProvider,
                 _refreshToken,

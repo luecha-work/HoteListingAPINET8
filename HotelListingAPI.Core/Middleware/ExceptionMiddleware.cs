@@ -21,14 +21,16 @@ namespace HotelListingAPI.Core.Middleware
         {
             try
             {
-                await this._next(context);
+                await _next(context);
+                // _logger.LogError($"Test ExceptionMiddleware");
             }
             catch (Exception ex)
             {
-                this._logger.LogError(ex, $"Something Wentwhile processing {context.Request.Path}");
+                _logger.LogError(
+                    ex,
+                    $"Something Went wrong while processing {context.Request.Path}"
+                );
                 await HandleExceptionAsync(context, ex);
-                // Handle exceptions if needed
-                throw;
             }
         }
 
@@ -36,11 +38,10 @@ namespace HotelListingAPI.Core.Middleware
         {
             context.Response.ContentType = "application/json";
             HttpStatusCode statusCode = HttpStatusCode.InternalServerError;
-
-            var errorDetails = new ErrorDetails
+            var errorDetails = new ErrorDeatils
             {
                 ErrorType = "Failure",
-                ErrorMessage = ex.Message
+                ErrorMessage = ex.Message,
             };
 
             switch (ex)
@@ -49,22 +50,23 @@ namespace HotelListingAPI.Core.Middleware
                     statusCode = HttpStatusCode.NotFound;
                     errorDetails.ErrorType = "Not Found";
                     break;
+                case BadHttpRequestException badRequestException:
+                    statusCode = HttpStatusCode.BadRequest;
+                    errorDetails.ErrorType = "Bad Request";
+                    break;
                 default:
                     break;
             }
 
             string response = JsonConvert.SerializeObject(errorDetails);
-
             context.Response.StatusCode = (int)statusCode;
-
             return context.Response.WriteAsync(response);
         }
     }
 
-    public class ErrorDetails
+    public class ErrorDeatils
     {
         public string ErrorType { get; set; }
-
         public string ErrorMessage { get; set; }
     }
 }

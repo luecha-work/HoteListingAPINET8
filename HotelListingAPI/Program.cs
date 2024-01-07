@@ -1,4 +1,5 @@
 using System.Text;
+using HotelListingAPI.Configuration;
 using HotelListingAPI.Core.Configurations;
 using HotelListingAPI.Core.Middleware;
 using HotelListingAPI.Core.Models.Contracts;
@@ -21,20 +22,14 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-//TODO: Connect SQL Server Database
-// var connectionString = builder.Configuration.GetConnectionString("HotelListingDbConnectionString");
-// builder
-//     .Services
-//     .AddDbContext<HotelListingDbContext>(options =>
-//     {
-//         options.UseSqlServer(connectionString);
-//     });
 //TODO: Connect SQL PosgregSQL Database
 var connectionString = builder.Configuration.GetConnectionString("HotelListingDbConnectionString");
-builder.Services.AddDbContext<HotelListingDbContext>(options =>
-{
-    options.UseNpgsql(connectionString);
-});
+builder
+    .Services
+    .AddDbContext<HotelListingDbContext>(options =>
+    {
+        options.UseNpgsql(connectionString);
+    });
 
 // TODO: Add IdentityCore for Authen
 // builder
@@ -44,12 +39,14 @@ builder.Services.AddDbContext<HotelListingDbContext>(options =>
 //     .AddEntityFrameworkStores<HotelListingDbContext>();
 
 builder
-    .Services.AddIdentityCore<ApiUser>(options =>
+    .Services
+    .AddIdentityCore<ApiUser>(options =>
     {
         options.Password.RequireDigit = true;
         options.Password.RequireLowercase = true;
     })
-    .AddRoles<IdentityRole>()
+    // .AddRoles<IdentityRole>()
+    .AddRoles<Roles>()
     .AddTokenProvider<DataProtectorTokenProvider<ApiUser>>("HotelListingApi")
     .AddEntityFrameworkStores<HotelListingDbContext>()
     .AddDefaultTokenProviders();
@@ -58,71 +55,44 @@ builder.Services.AddControllers();
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
-
-// builder.Services.AddSwaggerGen();
-builder.Services.AddSwaggerGen(option =>
-{
-    option.SwaggerDoc("v1", new OpenApiInfo { Title = "HotelListingApi", Version = "v1" });
-    option.AddSecurityDefinition(
-        "Bearer",
-        new OpenApiSecurityScheme
-        {
-            In = ParameterLocation.Header,
-            Description = "Please enter a valid token",
-            Name = "Authorization",
-            Type = SecuritySchemeType.Http,
-            BearerFormat = "JWT",
-            Scheme = "Bearer"
-        }
-    );
-    option.AddSecurityRequirement(
-        new OpenApiSecurityRequirement
-        {
-            {
-                new OpenApiSecurityScheme
-                {
-                    Reference = new OpenApiReference
-                    {
-                        Type = ReferenceType.SecurityScheme,
-                        Id = "Bearer"
-                    }
-                },
-                new string[] { }
-            }
-        }
-    );
-});
+builder.Services.ConfigureSwaggerGen();
 
 //TODO: Add cors url1
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAll", b => b.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
-});
+builder
+    .Services
+    .AddCors(options =>
+    {
+        options.AddPolicy("AllowAll", b => b.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
+    });
 
 //TODO: Add Mvc.Versioning from headers is(X-Version) or query(api-version)
-builder.Services.AddApiVersioning(options =>
-{
-    options.AssumeDefaultVersionWhenUnspecified = true;
-    options.DefaultApiVersion = new ApiVersion(1, 0);
-    options.ReportApiVersions = true;
-    options.ApiVersionReader = ApiVersionReader.Combine(
-        new QueryStringApiVersionReader("api-version"),
-        new HeaderApiVersionReader("X-Version"),
-        new MediaTypeApiVersionReader("ver")
-    );
-});
+builder
+    .Services
+    .AddApiVersioning(options =>
+    {
+        options.AssumeDefaultVersionWhenUnspecified = true;
+        options.DefaultApiVersion = new ApiVersion(1, 0);
+        options.ReportApiVersions = true;
+        options.ApiVersionReader = ApiVersionReader.Combine(
+            new QueryStringApiVersionReader("api-version"),
+            new HeaderApiVersionReader("X-Version"),
+            new MediaTypeApiVersionReader("ver")
+        );
+    });
 
 //TODO: Add Mvc ApiExplorer
-builder.Services.AddVersionedApiExplorer(options =>
-{
-    options.GroupNameFormat = "'v'VVV";
-    options.SubstituteApiVersionInUrl = true;
-});
+builder
+    .Services
+    .AddVersionedApiExplorer(options =>
+    {
+        options.GroupNameFormat = "'v'VVV";
+        options.SubstituteApiVersionInUrl = true;
+    });
 
 //TODO: Add Serilog1
-builder.Host.UseSerilog(
-    (ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration)
-);
+builder
+    .Host
+    .UseSerilog((ctx, lc) => lc.WriteTo.Console().ReadFrom.Configuration(ctx.Configuration));
 
 //TODO: Add Maper Data 1
 builder.Services.AddAutoMapper(typeof(MapperConfig));
@@ -135,7 +105,8 @@ builder.Services.AddScoped<IAuthManager, AuthManager>();
 
 //TODO: Add Authen JWT
 builder
-    .Services.AddAuthentication(options =>
+    .Services
+    .AddAuthentication(options =>
     {
         options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme; // "Bearer"
         options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -158,15 +129,18 @@ builder
     });
 
 //TODO: Add Caching1
-builder.Services.AddResponseCaching(options =>
-{
-    options.MaximumBodySize = 1024;
-    options.UseCaseSensitivePaths = true;
-});
+builder
+    .Services
+    .AddResponseCaching(options =>
+    {
+        options.MaximumBodySize = 1024;
+        options.UseCaseSensitivePaths = true;
+    });
 
 //TODO: Add OData
 builder
-    .Services.AddControllers()
+    .Services
+    .AddControllers()
     .AddOData(options =>
     {
         options.Select().Filter().OrderBy();
@@ -175,17 +149,16 @@ builder
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
+if (app.Environment.IsDevelopment()) { }
 
-//TODO: Add Middleware
-app.UseMiddleware<ExceptionMiddleware>();
+app.UseSwagger();
+app.UseSwaggerUI();
 
 //TODO: Add Serilog2
 app.UseSerilogRequestLogging();
+
+//TODO: Add Middleware
+app.UseMiddleware<ExceptionMiddleware>();
 
 app.UseHttpsRedirection();
 

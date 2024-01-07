@@ -1,0 +1,138 @@
+2024-01-07 14:21:43.634 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 14:21:43.669 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 14:21:43.669 +07:00 [INF] Hosting environment: Development
+2024-01-07 14:21:43.670 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 14:27:42.583 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 14:27:42.615 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 14:27:42.616 +07:00 [INF] Hosting environment: Development
+2024-01-07 14:27:42.626 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 14:29:46.550 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-07 14:29:46.763 +07:00 [INF] Register Attemt for user@example.com
+2024-01-07 14:29:46.780 +07:00 [INF] HTTP POST /api/Account/register responded 400 in 231.0914 ms
+2024-01-07 14:30:02.310 +07:00 [INF] Register Attemt for user@example.com
+2024-01-07 14:30:03.507 +07:00 [INF] HTTP POST /api/Account/register responded 200 in 1206.4674 ms
+2024-01-07 14:31:40.092 +07:00 [INF] Loging Attempt for user@example.com
+2024-01-07 14:31:40.093 +07:00 [WRN] Looking for user with email user@example.com
+2024-01-07 14:31:40.291 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiMGNiMWVkNDUtMTVjYy00MDk2LTg0YTQtNzFkYzU0NWEzNDQ0IiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiZDQwNWJjMGQtNDkyMC00MWUzLTg5YzctZWE3NDhlY2Q4YTNkIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTcwNDYxMzMwMCwiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.L4iSfZq5ye2QjT32N8b1nnJK_Ku6rAl5sa59n3KZY-0
+2024-01-07 14:31:40.292 +07:00 [WRN] CreateRefreshToken -> True
+2024-01-07 14:31:40.340 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 262.5728 ms
+2024-01-07 14:33:19.321 +07:00 [INF] HTTP GET /api/v1.0/countries responded 401 in 7.8574 ms
+2024-01-07 14:33:27.119 +07:00 [INF] Loging Attempt for user@example.com
+2024-01-07 14:33:27.119 +07:00 [WRN] Looking for user with email user@example.com
+2024-01-07 14:33:27.212 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiNWU1OWFmZTEtNTAzMy00Y2UyLTkxN2EtZWJhNjNlYTYyZDQ0IiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiZDQwNWJjMGQtNDkyMC00MWUzLTg5YzctZWE3NDhlY2Q4YTNkIiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiVXNlciIsImV4cCI6MTcwNDYxMzQwNywiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.5h-xJWfHrvN-_au6ofIGTOVEWKsQtK4Xy1kgBwE5oeY
+2024-01-07 14:33:27.248 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 133.1244 ms
+2024-01-07 14:33:42.696 +07:00 [INF] HTTP GET /api/v1.0/countries responded 403 in 25.3803 ms
+2024-01-07 14:33:53.564 +07:00 [INF] HTTP GET /api/v1.0/countries/get-all responded 200 in 29.2515 ms
+2024-01-07 14:41:03.776 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 14:41:03.828 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 14:41:03.829 +07:00 [INF] Hosting environment: Development
+2024-01-07 14:41:03.829 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 14:44:38.269 +07:00 [INF] Application is shutting down...
+2024-01-07 14:56:04.482 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 14:56:04.539 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 14:56:04.540 +07:00 [INF] Hosting environment: Development
+2024-01-07 14:56:04.540 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 14:57:52.331 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 14:57:52.379 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 14:57:52.380 +07:00 [INF] Hosting environment: Development
+2024-01-07 14:57:52.380 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 14:58:03.351 +07:00 [INF] Application is shutting down...
+2024-01-07 14:58:22.818 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 14:58:22.857 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 14:58:22.858 +07:00 [INF] Hosting environment: Development
+2024-01-07 14:58:22.858 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 14:58:53.926 +07:00 [INF] Application is shutting down...
+2024-01-07 15:01:55.941 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 15:01:55.969 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 15:01:55.969 +07:00 [INF] Hosting environment: Development
+2024-01-07 15:01:55.969 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 15:02:03.932 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-07 15:02:04.193 +07:00 [INF] Register Attemt for user@example.com
+2024-01-07 15:02:05.488 +07:00 [INF] HTTP POST /api/Account/register responded 200 in 1559.4915 ms
+2024-01-07 15:02:30.443 +07:00 [INF] Loging Attempt for user@example.com
+2024-01-07 15:02:30.445 +07:00 [WRN] Looking for user with email user@example.com
+2024-01-07 15:02:30.639 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiZDk1Y2Q5OWYtODllYy00ZDAxLTg0MGUtMDMyZjU5MWQ2YjMzIiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiZWViNTBlYTUtYTllNS00OGFlLTk0MGItNjM4MTdiNzJhOTY0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImV4cCI6MTcwNDYxNTE1MCwiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.O41Su51LTBAZu8eyZ1z0IF_0SiN4ihPU5apw4eGLGRM
+2024-01-07 15:02:30.691 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 259.7853 ms
+2024-01-07 15:02:58.393 +07:00 [INF] HTTP GET /api/v1.0/countries/get-all responded 401 in 8.1510 ms
+2024-01-07 15:03:07.584 +07:00 [INF] HTTP GET /api/v1.0/countries responded 401 in 2.5047 ms
+2024-01-07 15:05:03.984 +07:00 [INF] HTTP GET /api/v1.0/countries/get-all responded 401 in 2.1152 ms
+2024-01-07 15:11:46.913 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 15:11:46.985 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 15:11:46.986 +07:00 [INF] Hosting environment: Development
+2024-01-07 15:11:46.987 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 15:11:57.833 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-07 15:11:58.431 +07:00 [INF] Loging Attempt for user@example.com
+2024-01-07 15:11:58.435 +07:00 [WRN] Looking for user with email user@example.com
+2024-01-07 15:12:00.684 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiNmQ2YjZkYTItMGZiOS00MWIwLTg3Y2QtN2EzMGJkMWYxZTExIiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiZWViNTBlYTUtYTllNS00OGFlLTk0MGItNjM4MTdiNzJhOTY0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImV4cCI6MTcwNDYxNTcyMCwiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.XbrSLpojBic5MLGmy_ktOrDW3uwACafoxvVJ6Q96B54
+2024-01-07 15:12:00.959 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 3126.8459 ms
+2024-01-07 15:12:21.468 +07:00 [INF] HTTP GET /api/v1.0/countries/get-all responded 200 in 200.9999 ms
+2024-01-07 15:13:11.568 +07:00 [INF] HTTP POST /api/Account/refreshtoken responded 400 in 33.4391 ms
+2024-01-07 15:14:26.636 +07:00 [INF] HTTP POST /api/Account/refreshtoken responded 200 in 88.4955 ms
+2024-01-07 15:15:47.334 +07:00 [INF] Loging Attempt for user@example.com
+2024-01-07 15:15:47.335 +07:00 [WRN] Looking for user with email user@example.com
+2024-01-07 15:15:47.463 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiMDJjNGMxZjgtMTA1Zi00MGU4LTk0OGQtYTcwMTE3YWRlOTM5IiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiZWViNTBlYTUtYTllNS00OGFlLTk0MGItNjM4MTdiNzJhOTY0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImV4cCI6MTcwNDYxNTk0NywiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.lj_ugClavYKwLM7M32hZh-eelxX8G57IVYwCmPJ9oOA
+2024-01-07 15:15:47.509 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 183.0825 ms
+2024-01-07 15:16:05.741 +07:00 [INF] HTTP GET /api/v1.0/countries/get-all responded 200 in 11.2744 ms
+2024-01-07 15:16:17.273 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-01-07 15:16:17.275 +07:00 [WRN] The query uses a row limiting operator ('Skip'/'Take') without an 'OrderBy' operator. This may lead to unpredictable results. If the 'Distinct' operator is used after 'OrderBy', then make sure to use the 'OrderBy' operator after 'Distinct' as the ordering would otherwise get erased.
+2024-01-07 15:16:17.287 +07:00 [INF] HTTP GET /api/v1.0/countries responded 200 in 117.0458 ms
+2024-01-07 15:16:44.179 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 15:16:44.235 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 15:16:44.235 +07:00 [INF] Hosting environment: Development
+2024-01-07 15:16:44.236 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 15:17:26.155 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-07 15:17:26.403 +07:00 [INF] Loging Attempt for user@example.com
+2024-01-07 15:17:26.404 +07:00 [WRN] Looking for user with email user@example.com
+2024-01-07 15:17:27.676 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiZGY2ZDQ5YjctZDhjYi00MGQ4LWFkYzQtYTlmODVkNDA0Y2Y4IiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiZWViNTBlYTUtYTllNS00OGFlLTk0MGItNjM4MTdiNzJhOTY0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImV4cCI6MTcwNDYxNjA0NywiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.gfDlm-fta9ph_fPze611f2oa-_bbcNw2T-QlxaOjRAg
+2024-01-07 15:17:27.870 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 1715.5983 ms
+2024-01-07 15:17:45.920 +07:00 [INF] HTTP GET /api/v1.0/countries/get-all responded 401 in 8.0112 ms
+2024-01-07 15:19:00.453 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 15:19:00.490 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 15:19:00.491 +07:00 [INF] Hosting environment: Development
+2024-01-07 15:19:00.491 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 15:19:28.110 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-07 15:19:28.363 +07:00 [INF] Loging Attempt for user@example.com
+2024-01-07 15:19:28.364 +07:00 [WRN] Looking for user with email user@example.com
+2024-01-07 15:19:29.496 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiNjA4OGI1Y2UtOTA3YS00ZDg0LTkwZGYtZWRlZGViMTZkZmFlIiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiZWViNTBlYTUtYTllNS00OGFlLTk0MGItNjM4MTdiNzJhOTY0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImV4cCI6MTcwNDYxNjE2OSwiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.IjTy1qAgtLhlA0AKhUC_tVgWArQyxp004uPurrdlJ58
+2024-01-07 15:19:29.704 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 1595.4801 ms
+2024-01-07 15:19:48.374 +07:00 [INF] HTTP GET /api/v1.0/countries/get-all responded 200 in 95.4645 ms
+2024-01-07 15:19:55.233 +07:00 [INF] HTTP GET /api/Hotels/all-hotels responded 200 in 38.4679 ms
+2024-01-07 15:24:19.832 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 15:24:19.864 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 15:24:19.865 +07:00 [INF] Hosting environment: Development
+2024-01-07 15:24:19.865 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 15:32:33.711 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 15:32:33.742 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 15:32:33.742 +07:00 [INF] Hosting environment: Development
+2024-01-07 15:32:33.743 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 15:33:07.371 +07:00 [INF] Application is shutting down...
+2024-01-07 15:35:44.149 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 15:35:44.192 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 15:35:44.194 +07:00 [INF] Hosting environment: Development
+2024-01-07 15:35:44.194 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 15:38:40.113 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 15:38:40.159 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 15:38:40.160 +07:00 [INF] Hosting environment: Development
+2024-01-07 15:38:40.160 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 15:39:35.044 +07:00 [WRN] Failed to determine the https port for redirect.
+2024-01-07 15:39:35.343 +07:00 [INF] Loging Attempt for user@example.com
+2024-01-07 15:39:35.344 +07:00 [WRN] Looking for user with email user@example.com
+2024-01-07 15:39:36.452 +07:00 [WRN] Token Generated for user with email user@example.com | Tokren eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiJ1c2VyQGV4YW1wbGUuY29tIiwianRpIjoiMTRjNTQwMjktN2RlNS00ZWJmLWJlOTMtMDgyZjhmODY0NDU0IiwiZW1haWwiOiJ1c2VyQGV4YW1wbGUuY29tIiwidWlkIjoiZWViNTBlYTUtYTllNS00OGFlLTk0MGItNjM4MTdiNzJhOTY0IiwiaHR0cDovL3NjaGVtYXMubWljcm9zb2Z0LmNvbS93cy8yMDA4LzA2L2lkZW50aXR5L2NsYWltcy9yb2xlIjoiQWRtaW5pc3RyYXRvciIsImV4cCI6MTcwNDYxNzM3NiwiaXNzIjoiSG90ZWxMaXN0aW5nQVBJIiwiYXVkIjoiSG90ZWxMaXNpbmdBUElDbGllbnQifQ.HVDFLYgIb1nHgu5MY_OGdFsDXyMQ1F56aMPXv8SgArI
+2024-01-07 15:39:36.652 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 1610.1278 ms
+2024-01-07 15:39:55.338 +07:00 [INF] HTTP GET /api/v1.0/countries/get-all responded 200 in 95.8929 ms
+2024-01-07 15:42:03.896 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 15:42:03.940 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 15:42:03.941 +07:00 [INF] Hosting environment: Development
+2024-01-07 15:42:03.941 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 15:43:13.631 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 15:43:13.668 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 15:43:13.669 +07:00 [INF] Hosting environment: Development
+2024-01-07 15:43:13.669 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 15:44:04.663 +07:00 [INF] Now listening on: http://localhost:5233
+2024-01-07 15:44:04.703 +07:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-01-07 15:44:04.704 +07:00 [INF] Hosting environment: Development
+2024-01-07 15:44:04.704 +07:00 [INF] Content root path: C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI
+2024-01-07 15:44:13.657 +07:00 [ERR] Test ExceptionMiddleware
+2024-01-07 15:44:13.661 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 2.8694 ms
+2024-01-07 15:44:17.083 +07:00 [ERR] Test ExceptionMiddleware
+2024-01-07 15:44:17.083 +07:00 [INF] HTTP POST /api/Account/login responded 200 in 0.3515 ms

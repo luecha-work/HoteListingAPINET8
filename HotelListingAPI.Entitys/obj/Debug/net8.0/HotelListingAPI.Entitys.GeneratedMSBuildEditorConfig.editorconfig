@@ -8,6 +8,6 @@ build_property.PlatformNeutralAssembly =
 build_property.EnforceExtendedAnalyzerRules = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HotelListingAPI.Entitys
-build_property.ProjectDir = c:\Users\Luecha\Documents\Dev\project_dotnet\HoteListing.API.NET8\HotelListingAPI.Entitys\
+build_property.ProjectDir = C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI.Entitys\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 

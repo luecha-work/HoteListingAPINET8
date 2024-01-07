@@ -9,7 +9,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace HotelListingAPI.Entitys.Migrations
 {
     /// <inheritdoc />
-    public partial class pgMigration : Migration
+    public partial class customRoles : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -19,6 +19,12 @@ namespace HotelListingAPI.Entitys.Migrations
                 columns: table => new
                 {
                     Id = table.Column<string>(type: "text", nullable: false),
+                    Discriminator = table.Column<string>(type: "character varying(13)", maxLength: 13, nullable: false),
+                    RoleCode = table.Column<string>(type: "text", nullable: true),
+                    Create_At = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: true),
+                    Update_At = table.Column<DateTimeOffset>(type: "timestamp with time zone", nullable: true),
+                    Update_By = table.Column<string>(type: "text", nullable: true),
+                    Create_By = table.Column<string>(type: "text", nullable: true),
                     Name = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
                     NormalizedName = table.Column<string>(type: "character varying(256)", maxLength: 256, nullable: true),
                     ConcurrencyStamp = table.Column<string>(type: "text", nullable: true)
@@ -199,11 +205,11 @@ namespace HotelListingAPI.Entitys.Migrations
 
             migrationBuilder.InsertData(
                 table: "AspNetRoles",
-                columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
+                columns: new[] { "Id", "ConcurrencyStamp", "Create_At", "Create_By", "Discriminator", "Name", "NormalizedName", "RoleCode", "Update_At", "Update_By" },
                 values: new object[,]
                 {
-                    { "1f540e74-0987-4396-9b07-655ab6f89b76", null, "User", "USER" },
-                    { "3bd3608a-aab2-40a5-9bd7-5364a76f06f3", null, "Administrator", "ADMINISTRATOR" }
+                    { "b6763a0f-0fd5-4a00-9e86-ea9a173bb170", null, new DateTimeOffset(new DateTime(2024, 1, 7, 14, 16, 22, 629, DateTimeKind.Unspecified).AddTicks(8645), new TimeSpan(0, 7, 0, 0, 0)), "Configure", "Roles", "Administrator", "ADMINISTRATOR", "R01", new DateTimeOffset(new DateTime(2024, 1, 7, 14, 16, 22, 629, DateTimeKind.Unspecified).AddTicks(8690), new TimeSpan(0, 7, 0, 0, 0)), "" },
+                    { "f0cfe8a3-7ebb-4098-bafd-111b8d3593d4", null, new DateTimeOffset(new DateTime(2024, 1, 7, 14, 16, 22, 629, DateTimeKind.Unspecified).AddTicks(8697), new TimeSpan(0, 7, 0, 0, 0)), "Configure", "Roles", "User", "USER", "R02", new DateTimeOffset(new DateTime(2024, 1, 7, 14, 16, 22, 629, DateTimeKind.Unspecified).AddTicks(8698), new TimeSpan(0, 7, 0, 0, 0)), "" }
                 });
 
             migrationBuilder.InsertData(
