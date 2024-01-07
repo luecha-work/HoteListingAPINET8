@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelListingAPI.Entitys", "
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelListingAPI.Core", "HotelListingAPI.Core\HotelListingAPI.Core.csproj", "{793F8EF5-50FF-4294-A76F-32DAC27C3331}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelListingAPI.Controllers", "HotelListingAPI.Controllers\HotelListingAPI.Controllers.csproj", "{52AFF6C8-A49A-4D7F-906A-86F60E3ADB0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelListingAPI.Repositorys", "HotelListingAPI.Repositorys\HotelListingAPI.Repositorys.csproj", "{936B97E2-21CF-4ECD-9845-2AFFB8B8F549}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +31,14 @@ Global
 		{793F8EF5-50FF-4294-A76F-32DAC27C3331}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{793F8EF5-50FF-4294-A76F-32DAC27C3331}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{793F8EF5-50FF-4294-A76F-32DAC27C3331}.Release|Any CPU.Build.0 = Release|Any CPU
+		{52AFF6C8-A49A-4D7F-906A-86F60E3ADB0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{52AFF6C8-A49A-4D7F-906A-86F60E3ADB0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{52AFF6C8-A49A-4D7F-906A-86F60E3ADB0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{52AFF6C8-A49A-4D7F-906A-86F60E3ADB0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{936B97E2-21CF-4ECD-9845-2AFFB8B8F549}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{936B97E2-21CF-4ECD-9845-2AFFB8B8F549}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{936B97E2-21CF-4ECD-9845-2AFFB8B8F549}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{936B97E2-21CF-4ECD-9845-2AFFB8B8F549}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

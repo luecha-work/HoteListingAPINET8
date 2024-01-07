@@ -570,3 +570,7 @@ C:\Users\Luecha\Documents\Dev\project_dotnet\HoteListing.API.NET8\HotelListingAP
 C:\Users\Luecha\Documents\Dev\project_dotnet\HoteListing.API.NET8\HotelListingAPI\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
 C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\bin\Debug\net8.0\Npgsql.dll
 C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\bin\Debug\net8.0\Npgsql.EntityFrameworkCore.PostgreSQL.dll
+C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\bin\Debug\net8.0\HotelListingAPI.Repositorys.dll
+C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\bin\Debug\net8.0\HotelListingAPI.Repositorys.pdb
+C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\bin\Debug\net8.0\HotelListingAPI.Controllers.dll
+C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI\bin\Debug\net8.0\HotelListingAPI.Controllers.pdb

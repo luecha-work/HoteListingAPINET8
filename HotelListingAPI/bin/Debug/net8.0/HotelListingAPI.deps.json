@@ -8,8 +8,10 @@
     ".NETCoreApp,Version=v8.0": {
       "HotelListingAPI/1.0.0": {
         "dependencies": {
+          "HotelListingAPI.Controllers": "1.0.0",
           "HotelListingAPI.Core": "1.0.0",
           "HotelListingAPI.Entitys": "1.0.0",
+          "HotelListingAPI.Repositorys": "1.0.0",
           "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": "8.0.0",
           "Microsoft.AspNetCore.Mvc.Versioning": "5.1.0",
           "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "5.1.0",
@@ -2337,6 +2339,22 @@
           }
         }
       },
+      "HotelListingAPI.Controllers/1.0.0": {
+        "dependencies": {
+          "HotelListingAPI.Core": "1.0.0",
+          "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": "8.0.0",
+          "Microsoft.AspNetCore.Mvc.Versioning": "5.1.0",
+          "Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer": "5.1.0",
+          "Microsoft.AspNetCore.OData": "8.2.3",
+          "Microsoft.AspNetCore.OpenApi": "8.0.0",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.0",
+          "Serilog.AspNetCore": "8.0.0",
+          "Serilog.Expressions": "4.0.0"
+        },
+        "runtime": {
+          "HotelListingAPI.Controllers.dll": {}
+        }
+      },
       "HotelListingAPI.Core/1.0.0": {
         "dependencies": {
           "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
@@ -2363,6 +2381,18 @@
         },
         "runtime": {
           "HotelListingAPI.Entitys.dll": {}
+        }
+      },
+      "HotelListingAPI.Repositorys/1.0.0": {
+        "dependencies": {
+          "HotelListingAPI.Core": "1.0.0",
+          "HotelListingAPI.Entitys": "1.0.0",
+          "Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter": "8.0.0",
+          "Microsoft.AspNetCore.OData": "8.2.3",
+          "Microsoft.VisualStudio.Web.CodeGeneration.Design": "8.0.0"
+        },
+        "runtime": {
+          "HotelListingAPI.Repositorys.dll": {}
         }
       }
     }
@@ -3829,12 +3859,22 @@
       "path": "system.windows.extensions/7.0.0",
       "hashPath": "system.windows.extensions.7.0.0.nupkg.sha512"
     },
+    "HotelListingAPI.Controllers/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "HotelListingAPI.Core/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
     },
     "HotelListingAPI.Entitys/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "HotelListingAPI.Repositorys/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

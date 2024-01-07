@@ -1,10 +1,10 @@
 using System.Text;
-using HotelListingAPI.Configuration;
 using HotelListingAPI.Core.Configurations;
 using HotelListingAPI.Core.Middleware;
 using HotelListingAPI.Core.Models.Contracts;
-using HotelListingAPI.Core.Repositorys;
+using HotelListingAPI.Documents;
 using HotelListingAPI.Entitys;
+using HotelListingAPI.Repositorys;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
@@ -32,12 +32,6 @@ builder
     });
 
 // TODO: Add IdentityCore for Authen
-// builder
-//     .Services
-//     .AddIdentityCore<ApiUser>()
-//     .AddRoles<IdentityRole>()
-//     .AddEntityFrameworkStores<HotelListingDbContext>();
-
 builder
     .Services
     .AddIdentityCore<ApiUser>(options =>
@@ -104,28 +98,37 @@ builder.Services.AddScoped<IHotelRepository, HotelRepository>();
 builder.Services.AddScoped<IAuthManager, AuthManager>();
 
 //TODO: Add Authen JWT
+builder.Services.AddJwtConfiguration(builder.Configuration);
+
+// builder
+//     .Services
+//     .AddAuthentication(options =>
+//     {
+//         options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme; // "Bearer"
+//         options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+//     })
+//     .AddJwtBearer(options =>
+//     {
+//         options.TokenValidationParameters = new TokenValidationParameters
+//         {
+//             ValidateIssuerSigningKey = true,
+//             ValidateIssuer = true,
+//             ValidateAudience = true,
+//             ValidateLifetime = true,
+//             ClockSkew = TimeSpan.Zero,
+//             ValidIssuer = builder.Configuration["JwtSettings:Issuer"], //TODO: Get JwtSettings Properties from applications.json
+//             ValidAudience = builder.Configuration["JwtSettings:Audience"],
+//             IssuerSigningKey = new SymmetricSecurityKey(
+//                 Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Key"])
+//             )
+//         };
+//     });
+
 builder
     .Services
-    .AddAuthentication(options =>
+    .Configure<SecurityStampValidatorOptions>(options =>
     {
-        options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme; // "Bearer"
-        options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-    })
-    .AddJwtBearer(options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuerSigningKey = true,
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateLifetime = true,
-            ClockSkew = TimeSpan.Zero,
-            ValidIssuer = builder.Configuration["JwtSettings:Issuer"], //TODO: Get JwtSettings Properties from applications.json
-            ValidAudience = builder.Configuration["JwtSettings:Audience"],
-            IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes(builder.Configuration["JwtSettings:Key"])
-            )
-        };
+        options.ValidationInterval = TimeSpan.FromDays(1); // ตั้งค่าระยะเวลาในการตรวจสอบ Refresh Token ใหม่เป็น 1 วัน
     });
 
 //TODO: Add Caching1
@@ -136,6 +139,8 @@ builder
         options.MaximumBodySize = 1024;
         options.UseCaseSensitivePaths = true;
     });
+
+builder.Services.AddHealthChecks();
 
 //TODO: Add OData
 builder
@@ -153,6 +158,8 @@ if (app.Environment.IsDevelopment()) { }
 
 app.UseSwagger();
 app.UseSwaggerUI();
+
+app.MapHealthChecks("/healthz");
 
 //TODO: Add Serilog2
 app.UseSerilogRequestLogging();
