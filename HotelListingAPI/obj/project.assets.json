@@ -10131,48 +10131,41 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\luecha.kan\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "/home/luechakan/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI\\HotelListingAPI.csproj",
+      "projectUniqueName": "/home/luechakan/Dev/ProjectDotNet/HoteListingAPINET8/HotelListingAPI/HotelListingAPI.csproj",
       "projectName": "HotelListingAPI",
-      "projectPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI\\HotelListingAPI.csproj",
-      "packagesPath": "C:\\Users\\luecha.kan\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI\\obj\\",
+      "projectPath": "/home/luechakan/Dev/ProjectDotNet/HoteListingAPINET8/HotelListingAPI/HotelListingAPI.csproj",
+      "packagesPath": "/home/luechakan/.nuget/packages/",
+      "outputPath": "/home/luechakan/Dev/ProjectDotNet/HoteListingAPINET8/HotelListingAPI/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\luecha.kan\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/luechakan/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "https://www.nuget.org/api/v2/": {}
+        "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Controllers\\HotelListingAPI.Controllers.csproj": {
-              "projectPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Controllers\\HotelListingAPI.Controllers.csproj"
+            "/home/luechakan/Dev/ProjectDotNet/HoteListingAPINET8/HotelListingAPI.Controllers/HotelListingAPI.Controllers.csproj": {
+              "projectPath": "/home/luechakan/Dev/ProjectDotNet/HoteListingAPINET8/HotelListingAPI.Controllers/HotelListingAPI.Controllers.csproj"
             },
-            "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Core\\HotelListingAPI.Core.csproj": {
-              "projectPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Core\\HotelListingAPI.Core.csproj"
+            "/home/luechakan/Dev/ProjectDotNet/HoteListingAPINET8/HotelListingAPI.Core/HotelListingAPI.Core.csproj": {
+              "projectPath": "/home/luechakan/Dev/ProjectDotNet/HoteListingAPINET8/HotelListingAPI.Core/HotelListingAPI.Core.csproj"
             },
-            "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj": {
-              "projectPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Entitys\\HotelListingAPI.Entitys.csproj"
+            "/home/luechakan/Dev/ProjectDotNet/HoteListingAPINET8/HotelListingAPI.Entitys/HotelListingAPI.Entitys.csproj": {
+              "projectPath": "/home/luechakan/Dev/ProjectDotNet/HoteListingAPINET8/HotelListingAPI.Entitys/HotelListingAPI.Entitys.csproj"
             },
-            "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Repositorys\\HotelListingAPI.Repositorys.csproj": {
-              "projectPath": "C:\\Users\\luecha.kan\\Documents\\Dev\\Workshop\\project_dotnet_core\\HotelListingAPI\\HotelListingAPI.Repositorys\\HotelListingAPI.Repositorys.csproj"
+            "/home/luechakan/Dev/ProjectDotNet/HoteListingAPINET8/HotelListingAPI.Repositorys/HotelListingAPI.Repositorys.csproj": {
+              "projectPath": "/home/luechakan/Dev/ProjectDotNet/HoteListingAPINET8/HotelListingAPI.Repositorys/HotelListingAPI.Repositorys.csproj"
             }
           }
         }
@@ -10181,6 +10174,11 @@
         "warnAsError": [
           "NU1605"
         ]
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -10269,7 +10267,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.202/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

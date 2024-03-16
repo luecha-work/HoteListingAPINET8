@@ -1,2 +1,17 @@
 .vs/
 .github/
+
+HotelListingAPI/bin/
+HotelListingAPI/obj/
+
+HotelListingAPI.Controllers/bin/
+HotelListingAPI.Controllers/obj/
+
+HotelListingAPI.Core/bin/
+HotelListingAPI.Core/obj/
+
+HotelListingAPI.Entitys/bin/
+HotelListingAPI.Entitys/obj/
+
+HotelListingAPI.Repositorys/bin/
+HotelListingAPI.Repositorys/obj/

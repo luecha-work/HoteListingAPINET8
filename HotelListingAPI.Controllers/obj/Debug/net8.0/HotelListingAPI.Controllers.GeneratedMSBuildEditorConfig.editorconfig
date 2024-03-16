@@ -16,6 +16,6 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = HotelListingAPI.Controllers
-build_property.ProjectDir = C:\Users\luecha.kan\Documents\Dev\Workshop\project_dotnet_core\HotelListingAPI\HotelListingAPI.Controllers\
+build_property.ProjectDir = /home/luechakan/Dev/ProjectDotNet/HoteListingAPINET8/HotelListingAPI.Controllers/
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
